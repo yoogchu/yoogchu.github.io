@@ -88,9 +88,14 @@ h3 {
 	margin: 5px;
 }
 .social-media {
+	display: table-cell;
 	position: absolute;
 	top: 100%;
 	right: 0px;
+	overflow: auto;
+	max-width: 130px;
+	width: 50%;
+	height: 50px;
 }
 #txt {
 	padding: 10px;
@@ -107,14 +112,14 @@ h3 {
 }
 .projects {
 	padding: 10px;
-	background-color: rgba(212,212,212,.7);
+	background-color: rgba(212,212,212,.8);
 	margin: 10px;
 	border-radius: 5px;
 	min-width:200px;
-	width:80%;
+	width:90%;
 	position:absolute;
-	left:10%;
-	top:15%;
+	left:5%;
+	top:16%;
 	font-family: Ubuntu;
 }
 
