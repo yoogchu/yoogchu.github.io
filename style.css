@@ -124,13 +124,14 @@ hr {
   	}
   	.header {
   		top: 10%;
-  		width: 105%;
+  		width: 103%;
+  		right: 0;
   	}
   	.social-media {
   		left: 35%;
   	}
   	.txt {
-  		top: 30%;
+  		top: 26%;
   		position: absolute;
   		left: 0;
   	}
