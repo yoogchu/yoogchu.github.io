@@ -121,12 +121,13 @@ hr {
   	.logo {
   		top: 0;
   		left: 25%;
-  		z-index: -9999;
+  		z-index: 1;
   	}
   	.header {
   		top: 10%;
   		width: 103%;
   		right: 0;
+  		z-index: 9999;
   	}
   	.social-media {
   		left: 35%;
