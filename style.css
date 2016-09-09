@@ -38,15 +38,25 @@ h3 {
 	font-size: 16px;
 	font-style: bold;
 }
-#logo {
+hr { 
+    display: block;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.logo {
 	z-index: 99;
 	position:absolute;
+	display: inline-block;
 	top: 0;
 	left: 1%;
 	min-width: 200px;
 	min-height: 100px;
-	max-height: 200px;
-	max-width: 400px;
+	max-height: 150px;
+	max-width: 300px;
 	width:15%;
 	height: 15%;
 }
@@ -54,33 +64,6 @@ h3 {
 	right: 2%;
 	position: absolute;
 	display: flex;
-}
-.header-tab {
-	z-index:10;
-	display:table;
-	width:50%;
-	height:50px;
-	border: 2px solid black;
-	margin: auto;
-}
-.header-tab li {
-	display: table-cell;
-	width: 18%;
-	padding: 5px;
-	height: 100%;
-	vertical-align: middle;
-	margin: auto;
-}
-.header-tab a {
-	width: 100%;
-	display: inline-block;
-	border:1px solid red;
-	text-align: center;
-	margin: 0;
-	background-color:rgba(212,212,212,.5);
-	height: 100%;
-	vertical-align: middle;
-	top: -50%;
 }
 .social-media img {
 	max-height: 30px;
@@ -97,17 +80,15 @@ h3 {
 	width: 50%;
 	height: 50px;
 }
-#txt {
+.txt {
 	padding: 10px;
 	background-color: rgba(212,212,212,.5);
 	margin: 10px;
 	border-radius: 5px;
-	min-width:200px;
 	max-width: 400px;
-	width:40%;
-	position:absolute;
-	left:20%;
-	top:15%;
+	position: absolute;
+	left:10%;
+	top:15%; 
 	font-family: Ubuntu;
 }
 .projects {
@@ -123,6 +104,38 @@ h3 {
 	font-family: Ubuntu;
 }
 
-.footer{
+.footer {
+	visibility: hidden;
+	color: grey;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: black;
+}
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+  	.txt {
+  	background-color: rgba(212,212,212,.8);
+  	}
+  	.logo {
+  		top: 0;
+  		left: 25%;
+  	}
+  	.header {
+  		top: 10%;
+  	}
+  	.social-media {
+  		left: 35%;
+  	}
+  	.txt {
+  		top: 22%;
+  		position: absolute;
+  		left: 0;
+  	}
+  	.projects {
+  		top: 22%;
+  		position: absolute;
+  		left: 0;
+  	}
 }
