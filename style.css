@@ -7,15 +7,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     background: transparent;
 }
-/*html { 
-  background: url(images/abc.png) no-repeat center center fixed; 
+html { 
+  background: url(images/3.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}*/
+}
 html {
 	font-family: Ubuntu;
+
+}
+body {
+	background-repeat: repeat;
+
 }
 .site-wrapper{
 	padding:20px;
@@ -100,8 +105,12 @@ hr {
 	width:90%;
 	position:absolute;
 	left:5%;
-	top:16%;
+	top:20%;
 	font-family: Ubuntu;
+	overflow: none;
+}
+.table-responsive {
+	overflow: none;
 }
 
 .footer {
@@ -125,7 +134,7 @@ hr {
   	}
   	.header {
   		top: 10%;
-  		width: 103%;
+  		width: 102%;
   		right: 0;
   		z-index: 9999;
   	}
