@@ -1,0 +1,5 @@
+https://2013.picoctf.com/problems/injection/index.php
+
+select * from user where user= '$username'
+
+select * from user where user= ' ' or true; -- '
