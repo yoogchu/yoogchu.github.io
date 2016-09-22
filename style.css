@@ -22,9 +22,9 @@ body {
 	background-repeat: repeat;
 
 }
+
 .site-wrapper{
 	padding:20px;
-	background-image: url("images/3.jpg");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -87,7 +87,7 @@ hr {
 }
 .txt {
 	padding: 10px;
-	background-color: rgba(212,212,212,.5);
+	background-color: rgba(212,212,212,.85);
 	margin: 10px;
 	border-radius: 5px;
 	max-width: 400px;
