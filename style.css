@@ -72,7 +72,7 @@ hr {
 	color: #6699FF;
 }
 .nameblock {
-	background-color: rgba(212,212,212,.7);
+	background-color: rgba(230,230,230,.7);
 	color: #FFF;
 	padding: 20px;
 	font-family: Ubuntu;
@@ -118,7 +118,7 @@ hr {
 }
 .white-block {
 	width: 110%;
-	background-color: #FFF;
+	background-color: rgba(255,255,255,.85);
 	position: relative;
 	left: -15px;
 	text-align: center;
@@ -192,10 +192,12 @@ hr {
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 
   	.header {
-  		top: 10%;
-  		width: 102%;
-  		right: 0;
+  		top: 15px;
+  		width: 100%;
   		z-index: 9999;
+  		display: flex;
+  		justify-content:center;
+
   	}
   	.social-media {
   		left: 35%;
