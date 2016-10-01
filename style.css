@@ -272,4 +272,7 @@ hr {
   		padding: 0px;
   		margin: 0px;
   	}
+  	.info {
+  		width: 100%;
+  	}
 }
