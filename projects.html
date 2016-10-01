@@ -1,104 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" />
 
-    <meta name="description" content="Eugene Chu">
-    <meta name="author" content="Eugene Chu">
+	<meta name="description" content="Eugene Chu">
+	<meta name="author" content="Eugene Chu">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="StyleSheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-<!--    <link href="ss.css" type="text/css" rel="StyleSheet">
--->
-
-    <title>Projects</title>
-
-    </head>
-
-    <body>
-      <div class = "site-wrapper">
-        <img class = "logo" src = "images/geologo.svg">
-        <div class="header">
-          
-          <ul class = "nav nav-tabs navbar-right">
-            <li><a href="index.html"> Home </a></li>
-    <!--    <li><a href="blog.html"> Blog </a></li> -->
-            <li><a href="https://drive.google.com/file/d/0B3f92tAzt2NfUkstVjNneG5nWkk/view?usp=sharing"> Resume </a></li>
-            <li><a href="projects.html"> Projects </a></li>
-            <li><a href="mailto:echu31@gatech.edu"> Contact Me </a></li>
-          </ul>
-          <div class="social-media">
-            <a href = "https://github.com/yoogchu"> <img id = "github" src = "images/GitHub-Mark-64px.png"> </a>
-            <a href = "https://www.linkedin.com/in/eugenehchu"> <img id = "linkedin" src = "images/linkedin.png"> </a>
-             <a href = "http://devpost.com/yoogchu"> <img id = "devpost" src = "images/devpost.svg"> </a>
-
-          </div>
-        </div>  
-<!--
-           <ul class="cb-slideshow">
-            <li><span>Image 01</span><div></div></li>
-            <li><span>Image 02</span><div></div></li>
-            <li><span>Image 03</span><div></div></li>
-            <li><span>Image 04</span><div></div></li>
-            <li><span>Image 05</span><div></div></li>
-            <li><span>Image 06</span><div></div></li>
-        </ul>
--->
-          <div class ="projects table-responsive">
-            <h1 style = "text-align:center"> <strong> Projects </strong> </h1> <br>
-            <table class="table table-hover">
-              <tr>
-                <td><strong> Pacman Artificial Intelligence </td>
-                <td> A python program that simulates artificial intelligence to solve certain goals for Pacman, whether it be finding the fastest route to a certain location, or collecting the most points, or a combination of both.
-                <td> I integrated search algorithms such as depth first search, breadth first search, A* to create the artificial intelligence that finds the most efficient path to the end state. </td>
-              <tr>
-                <td> <strong> Intelligent Transportation Systems </strong </td>
-                <td> A project that involves creating a live map for the managers of the Georgia Tech Department of Transportation to aid in the supervision of the drivers. It allows the managers to see which buses are lagging and/or consistently off schedule. The buses have tablets on them that transmit information such as location, speed, etc. and is collected in a database. </td>
-                <td> I am working with a team of four to deploy the live map of the buses using Javascript and jQuery. I am also developing an algorithm to parse through large data sets to find inefficient drivers and misleading information. </td>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-              <tr>
-                <td> <strong> Turbine Engine Cycle Analysis </strong> </td>
-                <td> A MATLAB program that calculates the performance parameters for a generic jet engine cycle. It has the capability of turning on and off specific components based on the performance requirements. <br><br>
-                  Components include: Diffuser, Bypass Fan, Compressor, Fuel Pump, Main Burner, Turbine, Turbine Mixer, Fan Turbine, Afterburner, Core Nozzle, Fan Nozzle, Nozzle Mixer, and Combined Nozzle.
-                </td>
-                <td> I helped derive the equations with a team of 2 others and designed the code structure as well as output the performance parameters to a formatted text file.
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style_proj.css" type="text/css" rel="StyleSheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-              </tr>
-                <td> <strong> Get the Flight Out </strong></td>
-                <td> A webapp that queries the Expedia API to extract the cheapest flights out of an airport on a given day. It also utilizes the MapBox API as part of the UI. </td>
-                <td> I developed the algorithm to sort the cheapest flights and also connected the model view and controller together using Javascript and HTML. </td>
-                <td> <a href = "http://devpost.com/software/gtfo-get-the-flight-out"> Devpost </a> </td>
-              </tr>
-              <tr>
-                <td> <strong> MedxPort </strong></td>
-                <td> A webapp with an iOS component that is intended to be used by patients in small clinics as a universal medical profile as well as a scheduling application. The patient could update his medical profile on the webapp, and view it on the iOS app. The patient could also view the doctors schedule and choose a time slot available for both of them to avoid any double-bookings. </td>
-                <td> I helped develop the scheduling calendar using Javascript and jQuery as well as create the view/controller for the patient/doctor sign up forms. </td>
-                <td> <a href="http://devpost.com/software/medxport"> Devpost</a> </td>
-              </tr>
-            </table>
-      </div>
-    </div>
+	<title>eugene chu : projects</title>
+
+	</head>
+
+	<body>
+	<div class = "site-wrapper">
+
+	<div class="header">
+		<img class = "logo_small" src = "images/geologo.svg">
+
+	  <nav class = "nav nav-tabs navbar-right">
+	  <li><a href="index.html"> Home </a></li>
+	  <li><a href="https://drive.google.com/file/d/0B3f92tAzt2NfUkstVjNneG5nWkk/view?usp=sharing"> Resume </a></li>
+	  <!-- <li><a href="projects.html"> Projects </a></li> -->
+	  <li><a href="mailto:echu31@gatech.edu"> Contact Me </a></li>
+	  </ul>
+
+	  <div class="social-media">
+	  <a href = "https://github.com/yoogchu"> <img id = "github" src = "images/GitHub-Mark-64px.png"> </a>
+	  <a href = "https://www.linkedin.com/in/eugenehchu"> <img id = "linkedin" src = "images/linkedin.png"> </a>
+	  <a href = "http://devpost.com/yoogchu"> <img id = "devpost" src = "images/devpost.svg"> </a>
+
+	</div>
+	</div>
+
+		<div class= "divider"></div>
 
 
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+				<div class = "black-block">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+				<div class = "proj-title"><a name = "#1"></a> <h1> Intelligent Transportation Systems </h1> </div>
+
+				 <p> A webapp for which I am deploying a live map of the buses in the Georgia Tech transportation system to aid in the supervision of drivers. It allows the managers to see which buses are consistently lagging/leading and/or taking too many breaks. The buses have tablets on them that transmit information such as location, speed, etc. and is collected in a database. <br><br>
+				 I'm working with a team of four to deploy the live map of the buses using Javascript, jQuery, Node.js. I'm also developing a method to more accurately track the location of the buses, instead of solely relying on the inaccurate GPS readings. </p>
+				</div>
+
+				<div class = "white-block"> 
+				<div class = "proj-title"> <a name = "#2"></a><h1> Clean Water Reporter </h1> </div>
+				<p> A JavaFX application loosely based on a <a href = "https://2015.spaceappschallenge.org/challenge/clean-water-mapping/"> NASA challenge</a>. It supports finding clean drinking water and reporting on testing results. In many parts of the world, access to clean water is a severe problem. Many times, water is available, but people do not know where to get it. Other times, water may appear clean, but has unacceptable levels of contaminants. <br>
+				This application supports user creation/authentication/management, admin access, logging, submitting a water report, data visualization of water reports, and database logging. <br><br>
+				I'm working with PostgreSQL and JavaFX to create the controllers for connecting the model and view together in a MVC software architectural pattern. The team is also following Agile software development practices. 
+				</div>
+
+				<div class = "black-block">
+				<div class = "proj-title"> <a name = "#3"></a><h1> Tweety McTweetBot </h1> </div>
+				<p> A twitter bot that currently allows users to mention the bots name: '@pythonmcbotty', and will reply to specific commands. A current command involves responding to a flight number with current flight status, gate of the flight, and departure time. Another command calculates the time needed to leave the user's current location by analyzing live traffic data in the Google Map's API as well as the TSA lines in the given airport. <br><br>
+				I created the bot using Python, Node.js, the Google Maps API, and the Delta Airlines API.
+				</div>
+
+				<div class = "white-block">
+				<div class = "proj-title"> <a name = "#4"></a><h1> Pacman Artificial Intelligence </h1> </div>
+
+				 <p> A python program that simulates artificial intelligence to solve certain goals for Pacman, whether it be finding the fastest route to a certain location, collecting the most points from food, or a combination of both. <br><br>
+				 I integrated search algorithms such as depth first search, breadth first search, A*, as well as created several heuristics to create an optimal algorithm that finds the most efficient path to the goal state. </p>
+				</div>
+
+				<div class = "black-block">
+				 <div class = "proj-title"> <a name = "#5"></a><h1> Turbine Engine Cycle Analysis </h1> </div> 
+				 <p> A MATLAB program that calculates the performance parameters for a generic jet engine cycle. It has the capability of turning on and off specific components based on the performance requirements. <br>
+				  Components include: Diffuser, Bypass Fan, Compressor, Fuel Pump, Main Burner, Turbine, Turbine Mixer, Fan Turbine, Afterburner, Core Nozzle, Fan Nozzle, Nozzle Mixer, and Combined Nozzle. <br><br>
+				 I helped derive the equations with a team of 2 others and designed the code structure as well as output the performance parameters to a formatted text file.
+				</div>
+
+				<div class = "white-block">
+				<a name = "#6"></a><h1> Get the Flight Out </h1>
+				 <p> A webapp that queries the Expedia API to extract the cheapest flights out of an airport on a given day. It also utilizes the MapBox API as part of the UI. <br><br>
+				 I developed the algorithm to sort the cheapest flights and also created the frontend using Javascript and HTML. <br>
+				 <a href = "http://devpost.com/software/gtfo-get-the-flight-out"> Devpost </a> 
+				</p>
+			  	</div>
+			  
+				<div class = "black-block">
+				 <div class = "proj-title"> <a name = "#7"></a><h1> MedxPort </h1> </div>
+				 <p> A webapp with an iOS component that is intended to be used by patients in small clinics as a universal medical profile as well as a scheduling application. The patient could update his medical profile on the webapp, and view it on the iOS app. The patient could also view the doctors schedule and choose a time slot available for both of them to avoid any double-bookings. 
+				 I helped develop the scheduling calendar using Javascript and jQuery as well as create the view/controller for the patient/doctor sign up forms. <br>
+				 <a href="http://devpost.com/software/medxport"> Devpost</a> 
+				  </p>
+			 	</div> 
+
+	  </div>
+	</div>
+
+
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
