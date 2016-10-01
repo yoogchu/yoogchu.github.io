@@ -24,7 +24,7 @@ body {
 .site-wrapper{
 	background-size: cover;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	position: absolute;
 	overflow-x: hidden;
 	font-family: Ubuntu;
@@ -297,7 +297,7 @@ p {
 		display: flex;
 		justify-content:center;
 		position: relative;
-		top: 50px;
+		top: 60px;
 	}
 	.black-block, .white-block {
 		width: 110%;
