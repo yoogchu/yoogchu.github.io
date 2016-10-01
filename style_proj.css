@@ -14,6 +14,8 @@ html {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: Ubuntu;
+	background-size:100%;
+	width:100%;
 }
 
 body {
@@ -22,7 +24,6 @@ body {
 
 }
 .site-wrapper{
-	background-size: cover;
 	width: 100%;
 	min-height: 100%;
 	position: absolute;
