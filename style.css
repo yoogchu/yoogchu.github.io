@@ -183,16 +183,16 @@ hr {
 	top:-70px;
 }
 
-.info:hover {
+.info:hover .info:focus{
 	background-color: rgba(170,170,170,1);
 	opacity: 1;
 }
-.info:hover .info-type {
+.info:hover .info:focus .info-type {
 	display: block;
 	opacity: 1;
 	margin-bottom: -45px;
 }
-.info:hover .info-type1 {
+.info:hover .info:focus.info-type1 {
 	display: block;
 	opacity: 1;
 	margin-bottom: -45px;
@@ -279,18 +279,3 @@ hr {
   	.info {
   		width: 100%;
   	}
-  	.info:active {
-	background-color: rgba(170,170,170,1);
-	opacity: 1;
-	}
-	.info:active .info-type {
-	display: block;
-	opacity: 1;
-	margin-bottom: -45px;
-	}
-	.info:active .info-type1 {
-		display: block;
-		opacity: 1;
-		margin-bottom: -45px;
-	}
-}
