@@ -17,10 +17,10 @@ html {
 
 body {
 	font-family: Ubuntu;
-	background-size: cover;
+	background-size: 100%;
 }
 .site-wrapper{
-	background-size: cover;
+	background-size: 100%;
 	min-width: 100%;
 	min-height: 100%;
 	/*height: 100%;*/
