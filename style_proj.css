@@ -18,11 +18,9 @@ html {
 
 body {
 	font-family: Ubuntu;
-	min-height: 100%;
 }
 .site-wrapper{
-	min-width: 100%;
-	/*height: 100%;*/
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	overflow-x: hidden;
