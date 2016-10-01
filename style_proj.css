@@ -297,7 +297,7 @@ p {
 		display: flex;
 		justify-content:center;
 		position: relative;
-		top: 30px;
+		top: 50px;
 	}
 	.black-block, .white-block {
 		width: 110%;
