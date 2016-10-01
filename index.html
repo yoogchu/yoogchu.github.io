@@ -3,7 +3,7 @@
   <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="icon" href="images/favicon.ico" />
 	<meta name="description" content="Eugene Chu">
 	<meta name="author" content="Eugene Chu">
@@ -91,6 +91,14 @@
 		  <h1 style="color:white; text-align:center; width:100%; margin-bottom:20px;"> Projects</h1>
 		  <br>
 
+		<script>
+			$(document).ready(function() {
+   			$('.hover').bind('touchstart touchend', function(e) {
+        	e.preventDefault();
+        	$(this).toggleClass('hover_effect');
+    		});
+			});
+		</script>
 			<div class = "info">
 				<div class = "info-name"> Intelligent Transportation Systems <hr>
 				<div class = "info-type"> Webapp </div> </div>
