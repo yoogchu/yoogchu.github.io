@@ -253,6 +253,10 @@ hr {
 
 }
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+	html body .site-wrapper{
+		overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+	}
 
   	.header {
   		top: 15px;
