@@ -197,6 +197,9 @@ a {
 	opacity: 1;
 	margin-bottom: -45px;
 }
+.info:hover .info-name {
+	visibility: hidden;
+}
 
 
 .typed-cursor{
