@@ -32,6 +32,7 @@ h1 {
 	font-style: bold;
 	text-align: center;
 	margin: 15px;
+	font-family: Ubuntu;
 }
 h2 {
 	font-size: 18px;
@@ -54,6 +55,7 @@ hr {
 p {
 	text-align:justify;
 	margin: 10px;
+	font-family: Ubuntu;
 }
 .center {
 	display: block;
