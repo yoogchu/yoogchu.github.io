@@ -13,12 +13,11 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: Ubuntu;
 }
 
 body {
 	background-repeat: repeat;
-
+	font-family: Ubuntu;
 }
 .site-wrapper{
 	background-size: cover;
