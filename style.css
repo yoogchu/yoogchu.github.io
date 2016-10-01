@@ -124,19 +124,79 @@ hr {
 	text-align: center;
 	padding: 20px;
 }
-.green-block {
+.black-block {
 	width: 100%;
-	background-color: #ccffcc;
+	background-color: rgba(0,0,0,.9);
 	position: absolute;
 	left: 0;
 	text-align: center;
 	padding: 20px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	padding-bottom: 50px;
 }
 
 .table-responsive {
 	overflow: none;
 }
 
+.project {
+	width: 80%;
+	color: rgba(150,150,150,1);
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-family:Ubuntu;
+	align-content:center;
+}
+.info {
+	background-color: rgba(20,20,20,.8);
+	max-height: 200px;
+	max-width: 200px;
+	width: 20%;
+	height: 20%;
+	padding: 5px;
+	min-height: 40px;
+	font-size: 10pt;
+	margin: 10px;
+	min-width: 180px;
+	justify-content:center;
+	align-content:center;
+	display:table-cell;
+	font-size: 16pt;
+	transition: all 1s ease;
+}
+.info-type {
+	display: none;
+	color: #d87070;
+	font-size: 24pt;
+	position: relative;
+	top: -80px;
+}
+.info-type1 {
+	display: none;
+	color: #d87070;
+	font-size: 24pt;
+	position: relative;
+	top:-70px;
+}
+
+.info:hover {
+	background-color: rgba(170,170,170,1);
+	opacity: 1;
+}
+.info:hover .info-type {
+	display: block;
+	opacity: 1;
+	margin-bottom: -45px;
+}
+.info:hover .info-type1 {
+	display: block;
+	opacity: 1;
+	margin-bottom: -45px;
+}
 
 
 .typed-cursor{
@@ -181,12 +241,15 @@ hr {
 	color: #6f6f6f;
 	position: absolute;
 	left: 0;
+	bottom: 0;
 	width: 100%;
 	background-color: black;
 	font-family: Ubuntu;
 	padding: 20px;
 	font-size: 12px;
+	margin-top: 20px;
 	text-align: center;
+	clear:both;
 
 }
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
