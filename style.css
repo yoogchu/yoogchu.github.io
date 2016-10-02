@@ -24,6 +24,11 @@ body {
 	position: absolute;
 	overflow-x: hidden;
 }
+.container-fluid {
+	padding:0 !important;
+	margin:0 !important;
+	width: 100% !important;
+}
 h1 {
 	font-size: 24px;
 	font-style: bold;
@@ -56,8 +61,14 @@ a {
 	text-align: center;
 	vertical-align: center;
 	width: 40%;
-	max-height: 400px;
-	left: 20%;
+	max-height: 200px;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin: auto;
+
 }
 .divider {
 	width: 100%;
@@ -75,7 +86,7 @@ a {
 .nameblock {
 	background-color: rgba(230,230,230,.7);
 	color: #FFF;
-	padding: 20px;
+	padding: 30px;
 	font-family: Ubuntu;
 	min-width: 300px;
 }
@@ -93,6 +104,8 @@ a {
 	display: inline-block;
 	width: 100%;
 	font-family: Ubuntu;
+	right: 20px;
+	top:20px;
 }
 .social-media img {
 	max-height: 30px;
@@ -118,18 +131,22 @@ a {
 	min-width: 300px;
 }
 .white-block {
-	width: 110%;
+	/*width: 110%;*/
+	/*left: -15px;*/
+	width:100%;
+	left: 0;
 	background-color: rgba(255,255,255,.85);
 	position: relative;
-	left: -15px;
 	text-align: center;
 	padding: 20px;
 }
 .black-block {
-	width: 110%;
+	/*width: 110%;*/
+	/*left: -15px;*/
+	width: 100%;
+	left: 0;
 	background-color: rgba(0,0,0,.9);
 	position: relative;
-	left: -15px;
 	text-align: center;
 	padding: 20px;
 	display: flex;
@@ -267,10 +284,11 @@ a {
 		z-index: 9999;
 		display: flex;
 		justify-content:center;
+		right: 0;
 
 	}
 	.social-media {
-		left: 35%;
+		left: 34%;
 	}
 	#mobile-txt {
 		display: block;
