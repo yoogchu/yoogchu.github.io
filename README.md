@@ -1,1 +1,1 @@
-Hi! This is Eugene Chu's personal website. If you like what you see, feel free to email me about all the job opportunities you're willing to offer me. =)
+Hi! This is my (Eugene Chu) personal website! Feel free to reach out to me at echu31@gatech.edu.
