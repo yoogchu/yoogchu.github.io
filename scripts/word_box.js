@@ -1,30 +1,27 @@
-var pg = require('pg');
-var conString = "postgres://postgres:password@localhost:5432/eugene";
+'use strict'
 
-var client = new pg.Client(conString);
+const pg = require('pg');
+const conString = "postgres://postgres:password@localhost:5432/eugene";
+
+const client = new pg.Client(conString);
 client.connect();
 
-//queries are queued and executed one after another once the connection becomes available
-var x = 1000;
-
-// while (x > 0) {
-//     client.query("INSERT INTO junk(name, a_number) values('Ted',12)");
-//     client.query("INSERT INTO junk(name, a_number) values($1, $2)", ['John', x]);
-//     x = x - 1;
-// }
-
-var query = client.query("SELECT table_name FROM information_schema.tables WHERE table_schema='public' AND table_type='BASE TABLE';");
+function checkDatabase(word) {
+var query = client.query(
+	"INSERT INTO word_box(word) VALUES (" + word + ")"
+	);
 //fired after last row is emitted
 
-query.on('row', function(row) {
-    console.log(row);
-});
+var recent = client.query("SELECT * FROM word_box(word)");
+query.on('end', () => { client.end(); });
+return recent;
+}
 
-query.on('end', function() {
-    client.end();
-});
 
-console.log(query)
+// query.on('end', function() {
+//     client.end();
+// });
+
 
 // //queries can be executed either via text/parameter values passed as individual arguments
 // //or by passing an options object containing text, (optional) parameter values, and (optional) query name
