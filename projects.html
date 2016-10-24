@@ -48,8 +48,9 @@
 				<div class = "white-block">
 				<h1> Natural Language Processing: Haiku Bot </h1> <hr>
 
-				 <p> A twitter bot that creates a haiku based around the word that it is given. It does this by creating word associations from the TwinWord Word Association API, then creating a bigram collocation dictionary from the Gutenberg and Brown corporas. When the bigram dictionaries are created, an algorithm is used to randomly select bigrams that fill the syllabus rule of 5,7,5 per line, respectively. After the haiku is generated, the twitter bot automatically replies with the generated haiku. The program also takes quite a long time to create each bigram collocation dictionary so it supports caching.  <br><br>
+				 <p> A twitter bot that creates a haiku based around the word that it is given. It does this by creating word associations from the TwinWord Word Association API, then creating a bigram collocation dictionary from the Gutenberg and Brown corporas. When the bigram dictionaries are created, an algorithm is used to randomly select bigrams that fill the syllabus rule of 5, 7, 5 per line, respectively. After the haiku is generated, the twitter bot automatically replies with the generated haiku. The program also takes quite a long time to create each bigram collocation dictionary so it supports caching. In the future, I plan to implement trigrams as well as nonrandomized bigram selection for the haiku in order to bring some more sense to it. <br><br>
 				 I created this app for HackGSU and worked mostly independently. I used Python, the Python Natural Language Tool Kit, the TwinWord Word Association API, and the Twitter API. </p>
+				 <a href = "https://devpost.com/software/tweety-haiku" style="text-align:center"> <img src = "images/devpost-blue.svg" style = "height:50px;width:200px;margin:0px"> </a>
 				</div>
 
 				<a NAME = "7"></a>
