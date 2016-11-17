@@ -339,9 +339,12 @@ a {
 	}
 	#mobile-txt {
 		display: block;
-		}
+	}
 	.nav-tabs, nav, navbar-right, header{
 		padding: 0px;
 		margin: 0px;
+	}
+	.info {
+		width: 50%;
 	}
 }
