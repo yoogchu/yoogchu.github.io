@@ -26,23 +26,32 @@
 	<a NAME = "TOP"></a>
 	<div class="header">
 
-	  <nav class = "nav nav-tabs navbar-right">
-	  <li><a href="index.html"> Home </a></li>
-	  <li><a href="https://drive.google.com/file/d/0B3f92tAzt2NfUkstVjNneG5nWkk/view?usp=sharing"> Resume </a></li>
-	  <!-- <li><a href="projects.html"> Projects </a></li> -->
-	  <li><a href="mailto:echu31@gatech.edu"> Contact Me </a></li>
-	  </ul>
+		<nav class = "nav nav-tabs navbar-right">
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="https://drive.google.com/file/d/0B3f92tAzt2NfUkstVjNneG5nWkk/view?usp=sharing"> Resume </a></li>
+		<!-- <li><a href="projects.html"> Projects </a></li> -->
+		<li><a href="mailto:echu31@gatech.edu"> Contact Me </a></li>
+		</ul>
 
-	  <div class="social-media">
-	  <a href = "https://github.com/yoogchu"> <img id = "github" src = "images/GitHub-Mark-64px.png"> </a>
-	  <a href = "https://www.linkedin.com/in/eugenehchu"> <img id = "linkedin" src = "images/linkedin.png"> </a>
-	  <a href = "http://devpost.com/yoogchu"> <img id = "devpost" src = "images/devpost.svg"> </a>
-	</div>
+		<div class="social-media">
+		<a href = "https://github.com/yoogchu"> <img id = "github" src = "images/GitHub-Mark-64px.png"> </a>
+		<a href = "https://www.linkedin.com/in/eugenehchu"> <img id = "linkedin" src = "images/linkedin.png"> </a>
+		<a href = "http://devpost.com/yoogchu"> <img id = "devpost" src = "images/devpost.svg"> </a>
+		</div>
 	</div>
 		
 		<div class = 'logo_smalls'><img class = "logo_small" src = "images/geologo.svg"></div>
 
 		<div class = "divider"></div>
+
+				<a NAME = "9"></a>
+				<div class = "black-block">
+				<h1> 2d Platformer in Game Boy Advance Simulator </h1> <hr>
+
+				 <p> A gameboy platformer, written in C, developed for the visual boy advance. The game generates an infinite number of randomly seeded levels and the goal is to use the arrow keys to navigate the character sprite and to jump on the platforms to reach the goal sprite. This game uses Direct Memory Access to visualize the sprites and implements pretty decent object collision. <br><br>
+				 I created this game during ArchHacks. In the future I plan to port it to another platform and have improved random seeding as well as better object collision. </p>
+				 <a href = "https://github.com/yoogchu/vbaplatformer" style="text-align:center"> <img src = "images/GitHub-Mark-Light-64px.png"> </a>
+				</div>
 
 				<a NAME = "8"></a>
 				<div class = "white-block">
@@ -57,7 +66,7 @@
 				<div class = "black-block">
 				<h1> Intelligent Transportation Systems </h1> <hr>
 
-				 <p> A webapp for which I am deploying a live map of the buses in the Georgia Tech transportation system to aid in the supervision of drivers. It allows the managers to see which buses are consistently lagging/leading and/or taking too many breaks. The buses have tablets on them that transmit information such as location, speed, etc. and is collected in a database. <br><br>
+				 <p> A webapp for which I am deploying a live map of the buses in the Georgia Tech transportation system to aid in the supervision of drivers. It allows the managers to see which buses are consistently lagging/leading and/or taking too many breaks. The buses have tablets on them that transmit information such as location, speed, etc. and is collected in a database. The webapp currently supports multilayering of routes, and a minimap that tracks a bus given its bus id. <br><br>
 				 I'm working with a team of four to deploy the live map of the buses using Javascript, jQuery, Node.js. I'm also developing a method to more accurately track the location of the buses, instead of solely relying on the inaccurate GPS readings. </p>
 				</div>
 
@@ -70,17 +79,17 @@
 				I'm working with a team of five, using PostgreSQL and JavaFX to create the controllers for connecting the model and view together in a MVC software architectural pattern. The team is also following Agile software development practices. </p>
 				</div>
 
-				<a NAME = "5"></a>
+<!-- 				<a NAME = "5"></a>
 				<div class = "black-block">
 				<h1> Tweety McTweetBot </h1> <hr>
 
 				<p> A twitter bot that currently allows users to mention the bots id: '@pythonmcbotty', and will reply to specific commands. A current command involves responding to a flight number with current flight status, gate of the flight, and departure time. Another command calculates the time needed to leave the user's current location by analyzing live traffic data in the Google Map's API as well as the TSA lines in the given airport. <br><br>
 				I created the bot with one other teammate, using Python, Node.js, the Google Maps API, and the Delta Airlines API. <br> </p>
 				<a href = "http://devpost.com/software/tweetymctweetbo" style="text-align:center"> <img src = "images/devpost-blue.svg" style = "height:50px;width:200px;margin:0px"> </a>
-				</div>
+				</div> -->
 
 				<a NAME = "4"></a>
-				<div class = "white-block">
+				<div class = "black-block">
 				<h1> Pacman Artificial Intelligence </h1> <hr>
 
 				 <p> A python program that simulates artificial intelligence to solve certain goals for Pacman, whether it be finding the fastest route to a certain location, collecting the most points from food, or a combination of both. <br><br>
@@ -88,7 +97,7 @@
 				</div>
 
 				<a NAME = "3"></a>
-				<div class = "black-block">
+				<div class = "white-block">
 				 <h1> Turbine Engine Cycle Analysis </h1> <hr> 
 
 				 <p> A MATLAB program that calculates the performance parameters for a generic jet engine cycle. It has the capability of turning on and off specific components based on the performance requirements. <br>
@@ -98,24 +107,24 @@
 				</div>
 
 				<a NAME = "2"></a>
-				<div class = "white-block">
+				<div class = "black-block">
 				<h1> Get the Flight Out </h1> <hr>
 
 				 <p> A webapp that queries the Expedia API to extract the cheapest flights out of an airport on a given day. It also utilizes the MapBox API as part of the UI. <br><br>
 				 At HackFSU, I worked on a team of four and I developed the algorithm to sort the cheapest flights and also created the frontend using Javascript and HTML. <br> </p>
 				 <a href = "http://devpost.com/software/gtfo-get-the-flight-out"> <img src = "images/devpost-blue.svg" style = "height:50px;width:200px;margin:0px"> </a> 
 				</p>
-			  	</div>
+				</div>
 
-			  	<a NAME = "1"></a>
-				<div class = "black-block">
+				<a NAME = "1"></a>
+				<div class = "white-block">
 				<h1> MedxPort </h1> <hr>
 
 				 <p> A webapp with an iOS component that is intended to be used by patients in small clinics as a universal medical profile as well as a scheduling application. The patient could update his medical profile on the webapp, and view it on the iOS app. The patient could also view the doctors schedule and choose a time slot available for both of them to avoid any double-bookings. 
 				 In a team of four at MHacks, I helped develop the scheduling calendar using Javascript and jQuery as well as create the view/controller for the patient/doctor sign up forms. <br> </p>
 				 <a href="http://devpost.com/software/medxport"> <img src = "images/devpost-blue.svg" style = "height:50px;width:200px;margin:0px"></a> 
 				  </p>
-			 	</div> 
+				</div> 
 
 			<div class = "white-block">
 			<a href = "#TOP"> <i>Back to top &#8639</i> </a>
@@ -123,7 +132,7 @@
 
 			<div class = "footer">
 			Created with <i> varying </i> degrees of &#128155 by <a href= "http://twitter.com/yoogchu">Eugene Chu</a> <br>
-  			</div>
+			</div>
 
 			</div>
 

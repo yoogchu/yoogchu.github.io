@@ -131,8 +131,6 @@ a {
 	min-width: 300px;
 }
 .white-block {
-	/*width: 110%;*/
-	/*left: -15px;*/
 	width:100%;
 	left: 0;
 	background-color: rgba(255,255,255,.85);
@@ -142,8 +140,6 @@ a {
 	font-family: Ubuntu;
 }
 .black-block {
-	/*width: 110%;*/
-	/*left: -15px;*/
 	width: 100%;
 	left: 0;
 	background-color: rgba(0,0,0,.9);
