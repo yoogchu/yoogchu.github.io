@@ -284,10 +284,10 @@ p {
 		z-index: 9999;
 		display: flex;
 		justify-content:center;
-
+		right: 0;
 	}
 	.social-media {
-		left: 35%;
+		left: 34%;
 	}
 	#mobile-txt {
 		display: block;
@@ -296,20 +296,6 @@ p {
 		padding: 0px;
 		margin: 0px;
 	}
-	.info {
-		width: 100%;
-	}
-	.header {
-		display: flex;
-		justify-content:center;
-	}
 	.logo_smalls {
-		display: flex;
-		justify-content:center;
-		position: relative;
-		top: 60px;
+		display: none;
 	}
-	.black-block, .white-block {
-		width: 110%;
-	}
-
