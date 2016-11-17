@@ -200,7 +200,6 @@ a {
 	position: relative;
 	top:-70px;
 }
-
 .info:hover {
 	background-color: rgba(170,170,170,1);
 	opacity: 1;
@@ -344,7 +343,8 @@ a {
 		padding: 0px;
 		margin: 0px;
 	}
-	.info {
+	.project, .info, .info-type {
+		text-align: center;
 		width: 100%;
 	}
 }
