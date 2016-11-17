@@ -212,6 +212,11 @@ p {
 	opacity: 1;
 	margin-bottom: -45px;
 }
+.devpost {
+	height:50px;
+	width:200px;
+	margin:0px
+}
 
 
 .typed-cursor{
