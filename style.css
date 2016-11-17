@@ -325,7 +325,7 @@ a {
 		position: relative;
 		top:-40px;
 	}
-	#name {
+	#name, .typed-cursor {
 		position: relative;
 		top: -50px;
 	}
