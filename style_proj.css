@@ -279,18 +279,16 @@ p {
 	}
 
 	.header {
-		top: 15px;
 		width: 100%;
-		z-index: 9999;
 		display: flex;
 		justify-content:center;
 		right: 0;
 	}
 	.social-media {
-		left: 34%;
-	}
-	#mobile-txt {
 		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
 	}
 	.nav-tabs, nav, navbar-right, header{
 		padding: 0px;
