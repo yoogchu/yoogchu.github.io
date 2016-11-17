@@ -31,7 +31,10 @@ body {
 	position: absolute;
 	overflow-x: hidden;
 }
-
+p {
+	font-size: 12pt;
+	line-height: 180%;
+}
 h1 {
 	font-size: 26px;
 	font-style: bold;
@@ -130,7 +133,7 @@ p {
 }
 .txt {
 	margin: 10px;
-	width:50%;
+	width:80%;
 	font-family: Ubuntu;
 	margin: 0 auto;
 	text-align: left;
