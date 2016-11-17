@@ -279,6 +279,11 @@ p {
 	html body .site-wrapper{
 		overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
+	background: url(images/abstract.jpg) no-repeat fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	}
 
 	.header {
