@@ -50,6 +50,8 @@ h2 {
 h3 {
 	font-size: 16px;
 	font-style: bold;
+	text-align: center;
+
 }
 hr { 
 	display: block;
@@ -154,6 +156,21 @@ p {
 	text-align: center;
 	padding: 30px 8%;
 	color: rgba(240,240,240,1);
+}
+.img_small{
+	max-width:48.5%;
+	margin-bottom: 5px;
+	margin-left: 4px;
+	max-height: 500px;
+
+}
+.img_big {
+	width:100%;
+	margin-bottom: 5px;
+}
+.video {
+	display: block;
+	margin:auto;
 }
 .proj-title {
 	width: 30%;
@@ -304,4 +321,12 @@ p {
 	}
 	.logo_smalls {
 		display: none;
+	}
+	.img_big, .img_small{
+		max-width: 100%;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.video {
+		width:100%;
 	}
