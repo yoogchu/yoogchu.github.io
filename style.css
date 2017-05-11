@@ -120,8 +120,8 @@ a {
 	color: #3b5998;
 }
 .social-media img {
-	max-height: 30px;
-	max-width: 30px;
+	height:30px;
+	width: 30px;
 	margin: 5px;
 }
 .social-media {
