@@ -66,7 +66,6 @@ a {
 	left: 0;
 	right: 0;
 	margin: auto;
-
 }
 .divider {
 	width: 100%;
@@ -75,14 +74,14 @@ a {
 	padding: 100px;
 }
 #name {
-	background: #8b9dc3;
+	background: #3b5998;
 	padding: 10px;
 }
 #typed {
-	color: #8b9dc3;
+	color: #3b5998;
 }
 .nameblock {
-	background-color: rgba(230,230,230,.8);
+	background-color: rgba(230,230,230,.75);
 	color: #FFF;
 	padding: 30px;
 	font-family: Ubuntu;
@@ -98,18 +97,21 @@ a {
 	height: 100%;
 }
 .logo_small {
-	width: 200px;
+	width: 250px;
 	position: absolute;
-	top:30px;
-	left:30px;
+	top:25px;
+	left:25px;
 }
-
 .wide-screen {
 	display: none;
 }
 .nav {
 	margin:auto;
-	margin-top:2%;
+	margin-top:1%;
+	margin-bottom: 0;
+}
+.navbar .nav-tabs {
+	margin-bottom: 0;
 }
 .header {
 	display: flex;
@@ -128,15 +130,17 @@ a {
 }
 .social-media {
 	width: 100%;
-
 }
 .txt {
+	padding: 20px;
 	margin: 10px;
 	width:65%;
 	font-family: Ubuntu;
 	margin: 0 auto;
 	text-align: left;
 	min-width: 300px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 2px 2px #888888;
 }
 .main {
 	background: url(images/3.jpg) no-repeat center center fixed; 
@@ -186,50 +190,50 @@ a {
 	font-family:Ubuntu;
 	align-content:center;
 }
+.project a {
+	margin: 10px;
+}
 .info {
-	background-color: #8b9dc3;
+	background-color: #ffffff;
 	color: white;
 	height: 150px;
 	width: 150px;
 	padding: 5px;
 	font-size: 10pt;
-	margin: 10px;
 	justify-content:center;
 	align-content:center;
 	display:table-cell;
 	font-size: 16pt;
-	transition: all .75s ease;
+	transition: all 1s ease;
 	text-align: center;
 	vertical-align: center;
-	border-bottom: solid;
-	border-color: white;
-	border-width:1px;
+	box-shadow: 2px 2px 2px 2px #888888;
 
 }
 .info-name {
-	color: white;
-position: relative;
-float: left;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+	color: #8b9dc3;
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
 }
 .info-type {
 	display: none;
-	color: #3b5998;
+	color: #f7f7f7;
 	font-size: 24pt;
 }
 .info:hover {
-	background-color: #8b9dc3;
+	background-color: #3b5998;
 }
 .info:hover .info-type {
 	display: block;
 	position: relative;
-float: left;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .info:hover .info-name {
 	display: none;
@@ -280,8 +284,6 @@ transform: translate(-50%, -50%);
 	padding: 20px;
 	font-size: 12px;
 	text-align: center;
-	clear:both;
-
 }
 #mobile-txt {
 	display: none;
@@ -347,6 +349,7 @@ transform: translate(-50%, -50%);
 	}
 	.logo_small {
 		position: relative;
+		left: 0;
 	}
 	.header a{
 		margin-top: 20px;
@@ -364,12 +367,8 @@ transform: translate(-50%, -50%);
 	.typed-cursor {
 		display: none;
 	}
-	.header a {
-		
-	}
 
 	.project, .info, .info-type {
 		text-align: center;
-		width: 100%;
 	}
 }
