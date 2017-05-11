@@ -9,6 +9,7 @@
 	<meta name="author" content="Eugene Chu">
 
 	<link href="style_proj.css" type="text/css" rel="StyleSheet">
+	
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 
@@ -26,7 +27,7 @@
 	<a NAME = "TOP"></a>
 	<div class="header">
 
-		<nav class = "nav nav-tabs navbar-right">
+		<nav class = "nav nav-tabs navbar-right nav-text">
 		<li><a href="index.html"> Home </a></li>
 			<li><a href="https://yoogchu.github.io/blog"> Blog </a></li>
 			<li><a href="https://drive.google.com/file/d/0B3f92tAzt2NfUkstVjNneG5nWkk/view?usp=sharing"> Resume </a></li>
@@ -77,8 +78,9 @@
 				<div class = "txt">
 				<h1> Intelligent Transportation Systems </h1> <hr>
 
-				 <p> A webapp for which I am deploying a live map of the buses in the Georgia Tech transportation system to aid in the supervision of drivers. It allows the managers to see which buses are consistently lagging/leading and/or taking too many breaks. The buses have tablets on them that transmit information such as location, speed, etc. and is collected in a database. The webapp currently supports multilayering of routes, and a minimap that tracks a bus given its bus id. <br><br>
-				 I'm working with a team of four to deploy the live map of the buses using Javascript, jQuery, Node.js. I'm also developing a method to more accurately track the location of the buses, instead of solely relying on the inaccurate GPS readings. </p>
+				 <p> A webapp for which I am deploying a live map of the buses in the Georgia Tech transportation system to aid in the supervision of drivers. It allows the managers to see which buses are consistently lagging/leading and/or taking too many breaks. The buses have tablets on them that transmit information such as location, speed, etc. and is collected in a database. <br> I'm also using machine learning, specifically, a decision tree and logistical regression, to attempt to forecast bus arrival times. Data was collected through 01/17 - 05/17, consisting of acceleration, latitude/longitude, speed, etc to determine whether a bus was stopped at a bus stop or not. By using a decision tree, the model was able to obtain a consistent accuracy of 88% on the testing dataset. However, forecasting bus times via logistic regression was much more difficult task. The model was only able to obtain an accuracy of roughly 14%. <br><br>
+
+				 I worked with a team of four to deploy the live map of the buses using Javascript, jQuery, Node.js. I worked with another student to attempt forecasting bus times. </p>
 				</div>
 				</div>
 
@@ -99,15 +101,6 @@
 
 				</div>
 				</div>
-
-<!-- 				<a NAME = "5"></a>
-				<div class = "black-block">
-				<h1> Tweety McTweetBot </h1> <hr>
-
-				<p> A twitter bot that currently allows users to mention the bots id: '@pythonmcbotty', and will reply to specific commands. A current command involves responding to a flight number with current flight status, gate of the flight, and departure time. Another command calculates the time needed to leave the user's current location by analyzing live traffic data in the Google Map's API as well as the TSA lines in the given airport. <br><br>
-				I created the bot with one other teammate, using Python, Node.js, the Google Maps API, and the Delta Airlines API. <br> </p>
-				<a href = "http://devpost.com/software/tweetymctweetbo" style="text-align:center"> <img src = "images/devpost-blue.svg" style = "height:50px;width:200px;margin:0px"> </a>
-				</div> -->
 
 				<a NAME = "4"></a>
 				<div class = "black-block">

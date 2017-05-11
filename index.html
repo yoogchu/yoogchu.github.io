@@ -10,7 +10,10 @@
 	<meta name="keywords" content="Eugene Chu, Eugene, Chu, yoog, yoogchu, computer science, georgia tech, web developer, software engineer">
 
   <link href="style.css" type="text/css" rel="StyleSheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <!-- bootstrap -->
@@ -24,22 +27,19 @@
 	<body>
 	  <div class = "site-wrapper container-fluid">
 	  	<a NAME = "TOP"></a>
+		<div class = "main" style="background-url:none"> 
+
 		<div class="header">
 
-		  <nav class = "nav nav-tabs navbar-right">
-			<li><a href="index.html"> Home </a></li>
-			<li><a href="https://yoogchu.github.io/blog"> Blog </a></li>
-			<li><a href="https://drive.google.com/file/d/0B3f92tAzt2NfUkstVjNneG5nWkk/view?usp=sharing"> Resume </a></li>
-			<li><a href="contact.html"> Contact Me </a></li>
+		  <nav class = "nav nav-tabs navbar">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="https://yoogchu.github.io/blog">BLOG</a></li>
+			<li><a href="https://drive.google.com/file/d/0B3f92tAzt2NfUkstVjNneG5nWkk/view?usp=sharing">RESUME</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
 		  </ul>
+		</nav>
 
-		  <div class="social-media">
-			<a href = "https://github.com/yoogchu"> <img id = "github" src = "images/GitHub-Mark-64px.png"> </a>
-			<a href = "https://www.linkedin.com/in/eugenehchu"> <img id = "linkedin" src = "images/linkedin.png"> </a>
-			<a href = "http://devpost.com/yoogchu"> <img id = "devpost" src = "images/devpost.svg"> </a>
-
-		  </div>
-		</div>  
+		</div>
 
 
 		<div class= "divider"></div>
@@ -50,7 +50,7 @@
 				<script>
 				  $(function(){
 					  $("#typed").typed({
-						strings: ["Computer Science", "Aerospace Engineering", "Web Developer", "Artificial Intelligence"],
+						strings: ["Computer Science", "Aerospace Engineering", "Web Developer", "Artificial Intelligence", "Full Stack"],
 						typeSpeed: 25,
 						backDelay: 1000,
 						loop: true,
@@ -58,36 +58,22 @@
 				  });
 				</script>
 			  <span id="name">Eugene Chu</span> &#160
-			  <div id ="mobile-txt"> <br> </div> 
+			  <div class = "mobile"> <br> </div> 
 			  <span id="typed"></span>
 			</div>
 		</div>
-
-		<div class = "divider"></div>
-		<div class = "divider"></div>
-		<div class = "divider"></div>
-		<div class = "divider"></div>
-		<div class = "divider"></div>
-<!-- 
-		<div id = "wide-screen">
-			<div class = "divider"></div>
-			<div class = "divider"></div>
-			<div class = "divider"></div>
-			<div class = "divider"></div>
-		</div> -->
-
+	</div>
 
 		<div class = "white-block">
 		<div class = "txt">
 		  <h1> Hello! </h1> <hr>
 		  <p> My name is Eugene. <br> <br>
-			I'm currently a 3rd year undergraduate student attending Georgia Institute of Technology and I major in Computer Science with a minor in Aerospace Engineering. My concentrations are in <strong> artificial intelligence </strong> and <strong> information internetworks</strong> and I have a passion for learning.  <br>
+			I'm currently a 3rd year undergraduate student attending Georgia Institute of Technology and I major in Computer Science with a minor in Aerospace Engineering. <br> My concentrations are in <strong> artificial intelligence </strong> and <strong> information internetworks</strong> and I have a passion for learning.  <br>
 			<blockquote class = "blockquote-reverse">
-			  <!-- <p> "Carpe that fucking diem" </p> -->
 			  <p> 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.' </p>
 			  <footer> Aristotle </footer>
 			</blockquote>
-			  <!-- <br> Personally, I have a strong interest in vehicular autonomy as I believe that paving the way towards a safer and more efficient future is vital to our self-interest as a species. </p> -->
+
 		</div>
 		</div>
 
@@ -97,96 +83,70 @@
 		  <h1 style="color:white; text-align:center; width:100%; margin-bottom:20px;"> Projects</h1>
 		  <br>
 
-		  	<div class = "info"> <a href="https://yoogchu.github.io/projects.html#9">
-				<div class = "info-name"> 2d Platformer in GBA Simulator </div> <hr>
+		  	<a href="https://yoogchu.github.io/projects.html#9">
+				<div class = "info">
+				<div class = "info-name"> 2d Platformer in GBA Simulator </div> 
 				<div class = "info-type"> C </div>
 			</div> </a>
 
-			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#8">
-				<div class = "info-name"> Natural Language Processing: Haiku Bot </div> <hr>
-				<div class = "info-type1"> Twitter Bot </div>
-			</div> </a>
-
-			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#7">
-				<div class = "info-name"> Intelligent Transportation Systems </div> <hr>
-				<div class = "info-type"> Webapp </div> 
-			</div> </a>
-
-			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#6">
-				<div class = "info-name"> Clean Water Reporter </div> <hr>
-				<div class = "info-type"> JavaFX </div> 
-			</div> </a>
-
-<!-- 			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#5">
-				<div class = "info-name"> Delta Bot </div> <hr>
-				<div class = "info-type1"> Twitter Bot </div> 
-			</div> </a> -->
-
-			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#4">
-				<div class = "info-name"> Pacman Artificial Intelligence </div> <hr>
+			<a href="https://yoogchu.github.io/projects.html#8">
+				<div class = "info">
+				<div class = "info-name"> Natural Language Processing: Haiku Bot </div> 
 				<div class = "info-type"> Python </div>
 			</div> </a>
 
-			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#3">
-				<div class = "info-name"> Turbine Engine Cycle Analysis </div> <hr>
+			<a href="https://yoogchu.github.io/projects.html#7">
+				<div class = "info">
+				<div class = "info-name"> Intelligent Transportation Systems </div> 
+				<div class = "info-type"> Webapp </div> 
+			</div> </a>
+
+			<a href="https://yoogchu.github.io/projects.html#6">
+				<div class = "info">
+				<div class = "info-name"> Clean Water Reporter </div> 
+				<div class = "info-type"> Java </div> 
+			</div> </a>
+
+			<a href="https://yoogchu.github.io/projects.html#4">
+				<div class = "info">
+				<div class = "info-name"> Pacman Artificial Intelligence </div> 
+				<div class = "info-type"> Python </div>
+			</div> </a>
+
+			<a href="https://yoogchu.github.io/projects.html#3">
+				<div class = "info">
+				<div class = "info-name"> Turbine Engine Cycle Analysis </div> 
 				<div class = "info-type"> MATLAB </div>
 			</div> </a>
 
-			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#2">
-				<div class = "info-name"> MedxPort </div> <hr>
-				<div class = "info-type1"> Webapp </div>
+			<a href="https://yoogchu.github.io/projects.html#2">
+				<div class = "info">
+				<div class = "info-name"> MedxPort </div> 
+				<div class = "info-type"> Webapp </div>
 			</div> </a>
 
-			<div class = "info"> <a href="https://yoogchu.github.io/projects.html#1">
-				<div class = "info-name"> Get the Flight Out </div> <hr>
-				<div class = "info-type1"> Webapp </div>
+			 <a href="https://yoogchu.github.io/projects.html#1">
+			 	<div class = "info">
+				<div class = "info-name"> Get the Flight Out </div> 
+				<div class = "info-type"> Webapp </div>
 			</div> </a>
-
-			
-
-
 
 		</div>
 	</div>
-
-<!-- 	<div class = "white-block">
-		<h1> Playplace </h1> <hr>
-
-		<script src = 'scripts/word_box.js' type = "text/javascript"></script>
-
-		<div class = "word_box">
-			<div class = 'word_box_input'>
-				<label> Enter a word: </label>
-				<input type="text" class="form-control" id="word">
-			</div>
-
-			<div class = 'word_box_database'>
-				<label> Most recent 100 words: </label> <br>
-				<span id="word_box_output"></span>
-			</div>
-
-		<script>
-		$("#word").on("keydown",function (e) {
-			
-  			if(e.keyCode == 13) {
-
-        		$("#word_box_output").text(checkDatabase($(this).val()))
-        		$(this).val("")
-    		}
-		});
-		</script>
-		</div>
-
-	</div>
- -->
 
 	<div class = "white-block">
 	<a href = "#TOP" class = "scrollToTop"> <i>Back to top &#8639</i> </a>
-	<br><br><br><br>
-
-
+</div>
 	<div class = "footer">
-	Created with <i> varying </i> degrees of &#128155 by <a href= "http://twitter.com/yoogchu">Eugene Chu</a> <br>
+	Created with <i> varying </i> degrees of &#128155  by <a href= "https://www.facebook.com/yoogchu" style="color:#dfe3ee;">Eugene Chu</a> <hr>
+	<div class="social-media">
+			<a href = "https://facebook.com/yoogchu"> <img id = "facebook" src = "images/fb.png"> </a>
+			<a href = "https://www.instagram.com/_yoog/"> <img id = "instagram" src = "images/instagram.png"></a>
+			<a href = "https://www.twitter.com/yoogchu/"> <img id = "twitter" src = "images/twitter.png"></a>
+			<a href = "https://www.linkedin.com/in/eugenehchu"> <img id = "linkedin" src = "images/linkedin.png"> </a>
+			<a href = "https://github.com/yoogchu"> <img id = "github" src = "images/GitHub-Mark-64px.png"> </a>
+			<a href = "http://devpost.com/yoogchu"> <img id = "devpost" src = "images/devpost.svg"> </a>
+		  </div>
   </div>
 
 	</div>

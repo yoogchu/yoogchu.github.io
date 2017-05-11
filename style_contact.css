@@ -1,0 +1,17 @@
+.main {
+	background: none;
+}
+.site-wrapper {
+	background:#dfe3ee;
+}
+
+#success_message {
+	display: none;
+}
+
+
+/*.bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}*/
