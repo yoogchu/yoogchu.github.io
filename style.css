@@ -37,7 +37,7 @@ h2 {
 
 }
 h3 {
-	font-size: 12px;
+	font-size: 14px;
 	font-style: bold;
 }
 hr { 
@@ -141,6 +141,22 @@ a {
 	min-width: 300px;
 	background-color: #ffffff;
 	box-shadow: 2px 2px 2px 2px #888888;
+}
+.txt img {
+	width: 300px;
+	max-height: 500px;
+}
+.dabbling {
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: top;
+	text-align: center;
+	width: 48%;
+	display: inline-block;
+}
+.dabbling_div {
+	margin: auto;
+	margin-bottom: 20px;
 }
 .main {
 	background: url(images/3.jpg) no-repeat center center fixed; 
@@ -358,6 +374,12 @@ a {
 	#name {
 		position: relative;
 		top: -50px;
+	}
+	.dabbling {
+		width: 100%;
+	}
+	.dabbling img {
+		width: 100%;
 	}
 	#typed {
 		display: block;
