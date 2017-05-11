@@ -97,11 +97,8 @@ a {
 	width:100%;
 	height: 100%;
 }
-.logo_smalls_div {
-	width: 0px;
-}
 .logo_small {
-	max-width: 200px;
+	width: 200px;
 	position: absolute;
 	top:30px;
 	left:30px;
