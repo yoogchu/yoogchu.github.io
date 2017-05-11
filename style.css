@@ -98,13 +98,13 @@ a {
 	height: 100%;
 }
 .logo_smalls_div {
-	display: none;
+	width: 0px;
 }
 .logo_small {
 	max-width: 200px;
 	position: absolute;
 	top:30px;
-	left:10px;
+	left:30px;
 }
 
 .wide-screen {
