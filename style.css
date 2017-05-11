@@ -7,13 +7,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 	background: transparent;
 }
-/*html { 
-	background: url(images/3.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}*/
 
 body {
 	font-family: Ubuntu;
@@ -60,6 +53,7 @@ a {
 	text-decoration: none !important;
 	font-color:rgba(150,150,150,1);
 }
+
 .center {
 	display: block;
 	text-align: center;
@@ -103,6 +97,14 @@ a {
 	width:100%;
 	height: 100%;
 }
+.logo_small {
+	max-height: 100px;
+	max-width: 200px;
+	position: absolute;
+	top:30px;
+	left:10px;
+}
+
 .wide-screen {
 	display: none;
 }
@@ -119,7 +121,6 @@ a {
 	margin-right: 200px;
 	font-size: 16pt;
 	color: #3b5998;
-
 }
 .social-media img {
 	max-height: 30px;
@@ -339,6 +340,19 @@ transform: translate(-50%, -50%);
 		position: relative;
 		top:-40px;
 	}
+	.logo_smalls_div {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.logo_small {
+	position: relative;
+	}
+	.header a{
+		margin-top: 20px;
+		font-size:12pt;
+	}
 	#name {
 		position: relative;
 		top: -50px;
@@ -352,8 +366,7 @@ transform: translate(-50%, -50%);
 		display: none;
 	}
 	.header a {
-		margin-top: 20px;
-		font-size:12pt;
+		
 	}
 
 	.project, .info, .info-type {

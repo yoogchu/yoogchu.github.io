@@ -1,17 +1,15 @@
 .main {
 	background: none;
+	height: 25%;
 }
 .site-wrapper {
-	background:#dfe3ee;
+	background:#3b5998;
 }
 
 #success_message {
 	display: none;
 }
 
-
-/*.bottom {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}*/
+.header a {
+	color: #dfe3ee;
+}
