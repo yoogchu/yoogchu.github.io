@@ -28,17 +28,13 @@ p {
 }
 h1 {
 	font-size: 24px;
-	font-style: bold;
 	text-align: center;
 }
 h2 {
 	font-size: 18px;
-	font-style: bold;
-
 }
 h3 {
 	font-size: 14px;
-	font-style: bold;
 }
 hr { 
 	display: block;
@@ -97,10 +93,10 @@ a {
 	height: 100%;
 }
 .logo_small {
-	width: 250px;
+	width: 200px;
 	position: absolute;
-	top:25px;
-	left:25px;
+	top:30px;
+	left:30px;
 }
 .wide-screen {
 	display: none;
@@ -144,6 +140,7 @@ a {
 }
 .txt img {
 	width: 300px;
+	max-width: 300px;
 	max-height: 500px;
 }
 .dabbling {
