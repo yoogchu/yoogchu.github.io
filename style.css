@@ -98,7 +98,7 @@ a {
 	height: 100%;
 }
 .logo_smalls_div {
-	visibility: none; 
+	display: none;
 }
 .logo_small {
 	max-width: 200px;
@@ -349,7 +349,7 @@ transform: translate(-50%, -50%);
 		margin-bottom: 10px;
 	}
 	.logo_small {
-	position: relative;
+		position: relative;
 	}
 	.header a{
 		margin-top: 20px;
