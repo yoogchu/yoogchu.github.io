@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 body {
-	font-family: Ubuntu;
+	font-family: Poppins;
 }
 .site-wrapper{
 	height: 100%;
@@ -80,7 +80,7 @@ a {
 	background-color: rgba(230,230,230,.75);
 	color: #FFF;
 	padding: 30px;
-	font-family: Ubuntu;
+	font-family: Poppins;
 	min-width: 300px;
 }
 .logo {
@@ -128,15 +128,14 @@ a {
 	width: 100%;
 }
 .txt {
-	padding: 25px;
-	margin: 10px;
+	padding: 40px;
 	width:65%;
-	font-family: Ubuntu;
+	font-family: Poppins;
 	margin: 0 auto;
 	text-align: left;
 	min-width: 300px;
 	background-color: #ffffff;
-	box-shadow: 2px 2px 2px 2px #888888;
+	/*box-shadow: 2px 2px 2px 2px #888888;*/
 }
 .dabbling img {
 	max-width: 500px;
@@ -172,7 +171,7 @@ a {
 	position: relative;
 	text-align: center;
 	padding: 20px;
-	font-family: Ubuntu;
+	font-family: Poppins;
 }
 .black-block {
 	width: 100%;
@@ -185,7 +184,7 @@ a {
 	display: flex;
 	align-items:center;
 	justify-content:center;
-	font-family: Ubuntu;
+	font-family: Poppins;
 }
 
 .table-responsive {
@@ -199,7 +198,7 @@ a {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	font-family:Ubuntu;
+	font-family:Poppins;
 	align-content:center;
 }
 .project a {
@@ -210,16 +209,15 @@ a {
 	color: white;
 	height: 150px;
 	width: 150px;
-	padding: 5px;
-	font-size: 10pt;
+	padding: 20px;
 	justify-content:center;
 	align-content:center;
 	display:table-cell;
-	font-size: 16pt;
+	font-size: 12pt;
 	transition: all 1s ease;
 	text-align: center;
 	vertical-align: center;
-	box-shadow: 2px 2px 2px 2px #888888;
+	/*box-shadow: 2px 2px 2px 2px #888888;*/
 
 }
 .info-name {
@@ -234,7 +232,7 @@ a {
 .info-type {
 	display: none;
 	color: #f7f7f7;
-	font-size: 24pt;
+	font-size: 16pt;
 }
 .info:hover {
 	background-color: #3b5998;
@@ -257,7 +255,7 @@ a {
 	left: 0;
 	width: 100%;
 	background-color: #3b5998;
-	font-family: Ubuntu;
+	font-family: Poppins;
 	padding: 20px;
 	font-size: 12px;
 	text-align: center;
