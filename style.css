@@ -54,7 +54,7 @@ a {
 	display: block;
 	text-align: center;
 	vertical-align: center;
-	width: 60%;
+	width: 65%;
 	max-height: 200px;
 	position: absolute;
 	top:0;
@@ -79,7 +79,7 @@ a {
 .nameblock {
 	background-color: rgba(230,230,230,.75);
 	color: #FFF;
-	padding: 30px;
+	padding: 20px;
 	font-family: Poppins;
 	min-width: 300px;
 }
