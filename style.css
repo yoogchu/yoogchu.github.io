@@ -410,6 +410,9 @@ a {
 	.carousel-caption {
 		color: rgba(255,255,255,0.8) !important;
 	}
+	#jk {
+		display: none;
+	}
 	#typed {
 		display: block;
 		position: relative;
