@@ -96,7 +96,7 @@ a {
 	width: 200px;
 	position: absolute;
 	top:30px;
-	left:30px;
+	left:20px;
 }
 .wide-screen {
 	display: none;
@@ -104,9 +104,6 @@ a {
 .nav {
 	margin:auto;
 	margin-top:1%;
-	margin-bottom: 0;
-}
-.navbar .nav-tabs {
 	margin-bottom: 0;
 }
 .header {
