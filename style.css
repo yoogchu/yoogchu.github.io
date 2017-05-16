@@ -54,7 +54,7 @@ a {
 	display: block;
 	text-align: center;
 	vertical-align: center;
-	width: 65%;
+	width: 30%;
 	max-height: 200px;
 	position: absolute;
 	top:0;
@@ -77,7 +77,7 @@ a {
 	color: #3b5998;
 }
 .nameblock {
-	background-color: rgba(230,230,230,.75);
+	background-color: rgba(230,230,230,.6);
 	color: #FFF;
 	padding: 20px;
 	font-family: Poppins;
@@ -115,8 +115,7 @@ a {
 	font-family:Lato, sans-serif;
 }
 .header a {
-	margin-right: 200px;
-	font-size: 16pt;
+	font-size: 3vh;
 	color: #3b5998;
 }
 .social-media img {
@@ -129,6 +128,7 @@ a {
 }
 .txt {
 	padding: 40px;
+	padding-top: 20px;
 	width:65%;
 	font-family: Poppins;
 	margin: 0 auto;
@@ -328,12 +328,22 @@ a {
 		padding: 40px;
 	}
 }
-@media only screen and (min-device-width: 760px){
+@media only screen and (min-device-width: 1500px){ /* widescreen */
 	.wide-screen {
 		display: block;
 	}
 	.divider {
 		padding: 94px;
+	}
+	.header a {
+		font-size: 4vh;
+		margin-top: 2vh;
+	}
+	.carousel-inner {
+		height: 50vh;
+	}
+	.active {
+		max-height: 900px !important;
 	}
 }
 @media only screen and (min-device-width : 200px) and (max-device-width : 649px) {
