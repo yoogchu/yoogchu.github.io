@@ -116,7 +116,7 @@ html body .site-wrapper{
 		overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 	}
-.header {
+.header #slider {
 	display: none;
 }
 .container-images {
