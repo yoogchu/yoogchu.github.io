@@ -13,6 +13,9 @@ function changeSize(newValue) {
 
 var lastClickedImage = null;
 function clickImage(id) {
+	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    	return;
+	}
 	var clickedImage = id;
 	lastClickedImage = id;
 	clickedImage.style.visibility="hidden";
