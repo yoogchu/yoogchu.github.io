@@ -89,8 +89,19 @@ a {
 	max-width: 100%;
 	max-height: 100%;
 }
+#exitFS {
+	color:#f0f0f0;
+	position: fixed;
+	left:3%;
+	top: 3%;
+	font-size: 40pt;
+	background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
 @media only screen and (min-device-width : 200px) and (max-device-width : 649px) {
-	html body .site-wrapper{
+html body .site-wrapper{
 		overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 	}
@@ -106,6 +117,7 @@ a {
 .container-images img {
 	width: 100%;
 	margin:0px;
+	opacity: 1;
 }	
 
 }

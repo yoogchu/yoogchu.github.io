@@ -11,7 +11,6 @@ function changeSize(newValue) {
 	}
 }
 
-var windowLocation = null;
 var lastClickedImage = null;
 function clickImage(id) {
 	var clickedImage = id;
@@ -19,33 +18,28 @@ function clickImage(id) {
 	clickedImage.style.visibility="hidden";
 	var images = document.querySelectorAll(".container-images > img");
 	for (var i = 0; i < images.length; i++) {
-		images[i].style.opacity="0";
+		images[i].style.visibility="hidden";
 	}
-	document.getElementsByClassName("container-images")[0].style.backgroundColor="#000";
+	// document.getElementsByClassName("container-images")[0].style.backgroundColor="#000";
 	document.body.style.backgroundColor="#000";
 
 	document.getElementById("image-fs").style.display="block";
 	document.getElementById("fs-image").src = clickedImage.src;
 	document.getElementById("fs-image").style.marginLeft=((window.innerWidth-document.getElementById("fs-image").width)/2)+"px";
-	document.getElementsByClassName("container-images")[0].style.display="hidden";
-	
-
-	document.getElementsByClassName("header")[0].style.display="hidden";
-	windowLocation = window.screenTop;
-	console.log(windowLocation);
-
+	document.getElementsByClassName("container-images")[0].style.visibility="hidden";
+	document.getElementsByClassName("header")[0].style.visibility="hidden";
 }
 
 function hideFS() {
 	console.log("Hiding fullscreen image");
 	lastClickedImage.style.visibility="visible";
 	document.getElementById("image-fs").style.display="none";
-	document.getElementsByClassName("container-images")[0].style.backgroundColor="#f0f0f0";
-	document.getElementsByClassName("container-images")[0].style.display="block";
+	// document.getElementsByClassName("container-images")[0].style.backgroundColor="#f0f0f0";
+	document.getElementsByClassName("container-images")[0].style.visibility="visible";
 		var images = document.querySelectorAll(".container-images > img");
 	for (var i = 0; i < images.length; i++) {
-		images[i].style.opacity=".8";
+		images[i].style.visibility="visible";
 	}
-	document.getElementsByClassName("header")[0].style.display="block";
+	document.getElementsByClassName("header")[0].style.visibility="visible";
 	document.body.style.backgroundColor="#fff";
 }
