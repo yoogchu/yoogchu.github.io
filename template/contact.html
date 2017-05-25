@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
-	<link rel="icon" href="images/favicon.ico" />
+	<link rel="icon" href="../images/favicon.ico" />
 	<meta name="description" content="Eugene Chu, a 4th year student at Georgia Institute of Techology studying Computer Science and Aerospace Engineering. Software developer in the making.">
 	<meta name="author" content="Eugene Chu">
 	<meta name="keywords" content="Eugene Chu, Eugene, Chu, yoog, yoogchu, Computer Science, Computer Science Student, Student, Georgia Institute of Technology, Georgia Tech, Web Developer, Webdev, Web Development, Full Stack, Front End, Back End, Software Engineer, Software Engineering, Software Engineering Intern, Intern, Internship, Github, Java, Python, HTML, CSS, Javascript, blog, blogging">
@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 	<script src="../scripts/loader.js" type="text/javascript"></script>
 
 <!-- bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -29,9 +30,9 @@
 	  <div class = "site-wrapper container-fluid">
 	  	<a NAME = "TOP"></a>
 		<div class = "main"> 
-<div class = "logo_smalls_div"><img class = "logo_small" src = "../images/geologo.svg"></div>
+<div class = "logo_smalls_div"><a href="../index.html"><img class = "logo_small" src = "../images/e_outline_logo1.svg"></a></div>
 		<div class="header">
-			
+		
 
 		  <nav class = "nav nav-pills navbar">
 			<li><a href="../index.html">HOME</a></li>
@@ -52,81 +53,8 @@
 			<a href = "https://facebook.com/yoogchu"> <img id = "facebook" src = "../images/fb.png"> </a>
 			<a href = "https://www.instagram.com/_yoog/"> <img id = "instagram" src = "../images/instagram.png"></a>
 			<a href = "https://www.twitter.com/yoogchu/"> <img id = "twitter" src = "../images/twitter.png"></a>
-
 		  </div>
 <hr>
-<!-- 		<h1>OR </h1> <br>
-		You can write me a message saying how wonderful my website is and what an inspiration I was to you
-		<br> <br> -->
-<!-- 
-<div class="form-group">
-  <label for="usr">Name:</label>
-  <input type="text" class="form-control" id="usr"> <br>
-  <label for="comment">Comments (or harsh criticism):</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
-   <button type="submit" class="btn btn-primary">Submit</button>
-</div> -->
-
-<!-- form class="well form-horizontal" action=" " method="post"  id="contact_form">
-<fieldset>
-
-
-<legend>hmu tho</legend>
-
-<div class="form-group">
-  <label class="col-md-4 control-label">First Name</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label" >Last Name</label> 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-
-       <div class="form-group">
-  <label class="col-md-4 control-label">Email</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="Email Address" class="form-control"  type="text">
-    </div>
-  </div>
-</div>
-  
-<div class="form-group">
-  <label class="col-md-4 control-label">Comments</label>
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-        	<textarea class="form-control" name="comment" placeholder="Comments"></textarea>
-  </div>
-  </div>
-</div>
-
-<div class="alert alert-success" role="alert" id="success_message">Success! <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for the message! </div>
-
-<div class="form-group">
-  <label class="col-md-4 control-label"></label>
-  <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
-  </div>
-</div>
-
-</fieldset>
-</form>
-</div>
-
- -->
 // As a side note I was <i>totally</i> going to have a bunch of forms that send to my email but apparently Github Pages only supports static web pages.
 		</div>
 		</div>
@@ -160,6 +88,7 @@
 
 	</div>
 	</div> <!-- body -->
+	<div id = "loader"></div>
 
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>

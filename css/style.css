@@ -57,9 +57,10 @@ a {
 	padding: 100px;
 }
 .logo_small {
-	width: 200px;
+	max-width: 80px;
+	width: 10vh;
 	position: absolute;
-	top:30px;
+	top:20px;
 	left:20px;
 }
 .wide-screen {
@@ -145,6 +146,18 @@ a {
 	font-size: 12px;
 	text-align: center;
 }
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+#loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/e_outline_logo1.svg) center center no-repeat #f0f0f0;
+}
+
 #mobile-txt {
 	display: none;
 }
@@ -195,15 +208,18 @@ a {
 	}
 	.logo_smalls_div {
 		width: 100%;
-		display: block;
+		display: none;
 		text-align: center;
 		margin-bottom: 10px;
 	}
 	.logo_small {
 		position: relative;
 		left: 0;
+		display: none;
 	}
 	.header {
+		position: relative;
+		top: -10px;
 		display: inline-table;
 		text-align: center;
 	}
