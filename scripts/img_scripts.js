@@ -27,9 +27,9 @@ function clickImage(id) {
 	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
 		document.getElementById('exitFS').style.left="10px";
-		document.getElementById('exitFS').style.top="-10px";
+		document.getElementById('exitFS').style.top="50px";
 		if (window.innerHeight > window.innerWidth) {
-			document.getElementById('fs-image').style.marginTop="58%";
+			document.getElementById('fs-image').style.marginTop="50%";
 		}
 	}
 	document.body.style.backgroundColor="#000";
