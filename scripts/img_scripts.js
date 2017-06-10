@@ -16,12 +16,19 @@ var lastClickedImage = null;
 function clickImage(id) {
 	console.log("Clicked image");
 	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-    	return;
+		document.getElementById('fs-image').style.webkitTransform = "rotate(90deg)";
+		document.getElementById('image-fs').style.width="160%";
+		document.getElementById('image-fs').style.maxHeight="100%";
+		document.getElementById('image-fs').style.right="0";
+		document.getElementById('exitFS').style.left="10px";
+		document.getElementById('exitFS').style.top="-10px";
+
 	}
 	document.getElementById("image-fs").style.display="block";
 	var clickedImage = id;
 	var src = clickedImage.src;
-	var newSrc = src.substring(0, src.indexOf("thumbs")) + src.substring(src.indexOf("thumbs")+7, src.indexOf("_thumb")) + src.substring(src.indexOf("_thumb")+6, src.length);
+	var newSrc = src.substring(0, src.indexOf("thumbs")) + src.substring(src.indexOf("thumbs")+7,
+		src.indexOf("_thumb")) + src.substring(src.indexOf("_thumb")+6, src.length);
 	document.getElementById("fs-image").src = newSrc;
 	// document.getElementById("fs-image").style.marginLeft=((window.innerWidth-document.getElementById("fs-image").width)/2)+"px";
 
@@ -51,3 +58,10 @@ function hideFS() {
 	document.body.style.backgroundColor="#fff";
 	document.getElementById("fs-image").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
 }
+
+function calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
+
+    var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
+
+    return { width: srcWidth*ratio, height: srcHeight*ratio };
+ }
