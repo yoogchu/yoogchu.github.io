@@ -15,15 +15,7 @@ function changeSize(newValue) {
 var lastClickedImage = null;
 function clickImage(id) {
 	console.log("Clicked image");
-	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-		document.getElementById('fs-image').style.webkitTransform = "rotate(90deg)";
-		document.getElementById('image-fs').style.width="160%";
-		document.getElementById('image-fs').style.maxHeight="100%";
-		document.getElementById('image-fs').style.right="0";
-		document.getElementById('exitFS').style.left="10px";
-		document.getElementById('exitFS').style.top="-10px";
 
-	}
 	document.getElementById("image-fs").style.display="block";
 	var clickedImage = id;
 	var src = clickedImage.src;
@@ -32,6 +24,14 @@ function clickImage(id) {
 	document.getElementById("fs-image").src = newSrc;
 	// document.getElementById("fs-image").style.marginLeft=((window.innerWidth-document.getElementById("fs-image").width)/2)+"px";
 
+	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+
+		document.getElementById('exitFS').style.left="10px";
+		document.getElementById('exitFS').style.top="-10px";
+		if (window.innerHeight > window.innerWidth) {
+			document.getElementById('fs-image').style.marginTop="58%";
+		}
+	}
 	document.body.style.backgroundColor="#000";
 	
 
@@ -58,7 +58,16 @@ function hideFS() {
 	document.body.style.backgroundColor="#fff";
 	document.getElementById("fs-image").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
 }
-
+ /**
+  * Conserve aspect ratio of the orignal region. Useful when shrinking/enlarging
+  * images to fit into a certain area.
+  *
+  * @param {Number} srcWidth Source area width
+  * @param {Number} srcHeight Source area height
+  * @param {Number} maxWidth Fittable area maximum available width
+  * @param {Number} maxHeight Fittable area maximum available height
+  * @return {Object} { width, heigth }
+  */
 function calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
 
     var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
