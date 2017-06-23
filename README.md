@@ -1,1 +1,1 @@
-Hi! This is my (Eugene Chu) personal website! Feel free to reach out to me at echu31@gatech.edu.
+Website for projects, photography, blog. Used to be for recruiters, now its for me.
