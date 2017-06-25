@@ -21,12 +21,10 @@ def countFiles():
 def checkRename():
 	files = glob.glob(DIR + "*" + EXT)
 	files.sort(key=os.path.getmtime)
-
-	if countFiles() ==  int(files[len(files)-1].split('.')[0]):
+	if countFiles() == int(files[len(files)-1][files[len(files)-1].rfind('/')+1: files[len(files)-1].rfind('.')])):
 		return False
 	else:
 		return True
-
 def compress():
 	if not os.path.exists(DIR + 'thumbs/'):
 		os.makedirs(DIR + 'thumbs/')
