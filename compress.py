@@ -21,8 +21,12 @@ def countFiles():
 def checkRename():
 	files = glob.glob(DIR + "*" + EXT)
 	files.sort(key=os.path.getmtime)
-	if countFiles() == int(files[len(files)-1][files[len(files)-1].rfind('/')+1: files[len(files)-1].rfind('.')])):
+	print countFiles()
+	print str(int(files[len(files)-1][files[len(files)-1].rfind('/')+1: files[len(files)-1].rfind('.')]))
+
+	if countFiles() == int(files[len(files)-1][files[len(files)-1].rfind('/')+1: files[len(files)-1].rfind('.')]):
 		return False
+
 	else:
 		return True
 def compress():
@@ -74,7 +78,7 @@ def writeToHTML(filename):
 	overWrite.close()
 
 def main():
-	if checkRename:
+	if checkRename():
 		print 'Renaming ' + str(countFiles()) + ' files ...'
 		rename()
 		print 'Writing to HTML ...'

@@ -1,19 +1,19 @@
-function changeSize(newValue) {
-	console.log("changeSize");
-	document.getElementById("image-size").innerHTML = newValue;
-
-	var images = document.querySelectorAll(".container-images > img");
-	console.log(images);
-	newValue = newValue+"px";
-
-	for( var i = 0; i < images.length; i++) {
-		console.log("changing " + images[i] + "to " + newValue);
-	    images[i].style.width=newValue;
-	}
-}
+//Some functions for manipulating photography page
 
 var lastClickedImage = null;
+var fullScreen = false;
+
+document.onkeydown = checkKey;
+
+function changeSize(newValue) {
+	document.getElementById("image-size").innerHTML = newValue;
+	var images = document.querySelectorAll(".container-images > img");
+	newValue = newValue+"px";
+	for( var i = 0; i < images.length; i++) images[i].style.width=newValue;
+}
+
 function clickImage(id) {
+	fullScreen = true;
 	console.log("Clicked image");
 
 	document.getElementById("image-fs").style.display="block";
@@ -46,6 +46,7 @@ function clickImage(id) {
 }
 
 function hideFS() {
+	fullScreen = false;
 	console.log("Hiding fullscreen image");
 	lastClickedImage.style.visibility="visible";
 	document.getElementById("image-fs").style.display="none";
@@ -57,6 +58,25 @@ function hideFS() {
 	document.getElementsByClassName("header")[0].style.visibility="visible";
 	document.body.style.backgroundColor="#fff";
 	document.getElementById("fs-image").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
+}
+
+function checkKey(e) {
+	e = e || window.event;
+
+    if (e.keyCode == '38') {
+        // up arrow
+    }
+    else if (e.keyCode == '40') {
+        // down arrow
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+    }
+
+}
 }
  /**
   * Conserve aspect ratio of the orignal region. Useful when shrinking/enlarging
