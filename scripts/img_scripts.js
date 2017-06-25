@@ -3,19 +3,53 @@
 var lastClickedImage = null;
 var fullScreen = false;
 
-document.onkeydown = checkKey;
+document.onkeydown = function(e) {
+	if (fullScreen == false) {
+		return;
+	} else {
+		changeImage(e)
+	}
+};
+
+function changeImage(e) {
+	var fs_source = document.getElementById("fs-image").src;
+	var img = {
+			path:fs_source.substring(0, fs_source.lastIndexOf("/")+1),
+			num:fs_source.substring(fs_source.lastIndexOf("/")+1, fs_source.lastIndexOf(".")),
+			ext: fs_source.substring(fs_source.lastIndexOf(".")+1)
+		}
+	var images = document.querySelectorAll(".container-images > img");
+	first_img = images[0].src.substring(images[0].src.lastIndexOf("/")+1, images[0].src.lastIndexOf("_"));
+	switch (e.keyCode) {
+		case 27: //esc
+			hideFS()
+		case 37: //left
+			if (img.num == first_img) {
+				img.num = 1
+			} else {
+				img.num++;
+			}
+			break;
+		case 39: //right
+			if (img.num == 1) { 
+				img.num = first_img
+			} else {
+				img.num--;
+			}
+			break;
+	}
+	document.getElementById("fs-image").src = img.path + img.num + "." + img.ext;
+}
 
 function changeSize(newValue) {
 	document.getElementById("image-size").innerHTML = newValue;
 	var images = document.querySelectorAll(".container-images > img");
 	newValue = newValue+"px";
-	for( var i = 0; i < images.length; i++) images[i].style.width=newValue;
+	for(var i = 0; i < images.length; i++) images[i].style.width=newValue;
 }
 
 function clickImage(id) {
 	fullScreen = true;
-	console.log("Clicked image");
-
 	document.getElementById("image-fs").style.display="block";
 	var clickedImage = id;
 	var src = clickedImage.src;
@@ -25,72 +59,36 @@ function clickImage(id) {
 	// document.getElementById("fs-image").style.marginLeft=((window.innerWidth-document.getElementById("fs-image").width)/2)+"px";
 
 	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-
 		document.getElementById('exitFS').style.left="10px";
 		document.getElementById('exitFS').style.top="50px";
-		if (window.innerHeight > window.innerWidth) {
-			document.getElementById('fs-image').style.marginTop="50%";
-		}
+		if (window.innerHeight > window.innerWidth) document.getElementById('fs-image').style.marginTop="50%";	
 	}
 	document.body.style.backgroundColor="#000";
-	
-
 	clickedImage.style.visibility="hidden";
 	var images = document.querySelectorAll(".container-images > img");
-	for (var i = 0; i < images.length; i++) {
-		images[i].style.visibility="hidden";
-	}
+	for (var i = 0; i < images.length; i++) images[i].style.visibility="hidden";
 	document.getElementsByClassName("container-images")[0].style.visibility="hidden";
 	document.getElementsByClassName("header")[0].style.visibility="hidden";
+	document.getElementsByClassName("footer")[0].style.visibility="hidden";
+	document.getElementsByClassName("white-block")[0].style.visibility="hidden";
 	lastClickedImage = id;
 }
 
 function hideFS() {
 	fullScreen = false;
-	console.log("Hiding fullscreen image");
 	lastClickedImage.style.visibility="visible";
 	document.getElementById("image-fs").style.display="none";
 	document.getElementsByClassName("container-images")[0].style.visibility="visible";
-		var images = document.querySelectorAll(".container-images > img");
-	for (var i = 0; i < images.length; i++) {
-		images[i].style.visibility="visible";
-	}
+	var images = document.querySelectorAll(".container-images > img");
+	for (var i = 0; i < images.length; i++) images[i].style.visibility="visible";
 	document.getElementsByClassName("header")[0].style.visibility="visible";
+	document.getElementsByClassName("footer")[0].style.visibility="visible";
+	document.getElementsByClassName("white-block")[0].style.visibility="visible";
 	document.body.style.backgroundColor="#fff";
 	document.getElementById("fs-image").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
 }
 
-function checkKey(e) {
-	e = e || window.event;
-
-    if (e.keyCode == '38') {
-        // up arrow
-    }
-    else if (e.keyCode == '40') {
-        // down arrow
-    }
-    else if (e.keyCode == '37') {
-       // left arrow
-    }
-    else if (e.keyCode == '39') {
-       // right arrow
-    }
-
-}
-}
- /**
-  * Conserve aspect ratio of the orignal region. Useful when shrinking/enlarging
-  * images to fit into a certain area.
-  *
-  * @param {Number} srcWidth Source area width
-  * @param {Number} srcHeight Source area height
-  * @param {Number} maxWidth Fittable area maximum available width
-  * @param {Number} maxHeight Fittable area maximum available height
-  * @return {Object} { width, heigth }
-  */
 function calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
-
-    var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
-
-    return { width: srcWidth*ratio, height: srcHeight*ratio };
+	var ratio = Math.min(maxWidth / srcWidth, maxHeight / srcHeight);
+	return { width: srcWidth*ratio, height: srcHeight*ratio };
  }
