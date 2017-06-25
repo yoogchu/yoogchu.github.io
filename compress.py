@@ -18,13 +18,22 @@ def countFiles():
 
 # print countFiles(DIR, ".jpg")
 
+def checkRename():
+	files = glob.glob(DIR + "*" + EXT)
+	files.sort(key=os.path.getmtime)
+
+	if countFiles() ==  int(files[len(files)-1].split('.')[0]):
+		return False
+	else:
+		return True
+
 def compress():
 	if not os.path.exists(DIR + 'thumbs/'):
 		os.makedirs(DIR + 'thumbs/')
 
 	for i in range (1, countFiles()+1):
 		if os.path.isfile(DIR + "thumbs/" + str(i) + "_thumb" + EXT):
-			print 'skipping ' + str(i) + EXT
+			# print 'skipping ' + str(i) + EXT
 			continue
 		print 'compressing ' + str(i) + EXT
 
@@ -67,10 +76,11 @@ def writeToHTML(filename):
 	overWrite.close()
 
 def main():
-	print 'Renaming ' + str(countFiles()) + ' files ...'
-	rename()
-	print 'Writing to HTML ...'
-	writeToHTML('photography.html')
+	if checkRename:
+		print 'Renaming ' + str(countFiles()) + ' files ...'
+		rename()
+		print 'Writing to HTML ...'
+		writeToHTML('photography.html')
 	print 'Compressing ...'
 	compress()
 	
