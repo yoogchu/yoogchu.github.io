@@ -112,7 +112,8 @@ def main():
 		rename(DIR_THUMB)
 
 	checkRename()
-	if increment_num < countFiles(DIR):
+
+	if increment_num < countFiles(DIR) or increment_num > countFiles(DIR_THUMB):
 		print 'Renaming ' + str(countFiles(DIR)) + ' files ...'
 		rename(DIR)
 		print 'Writing to HTML ...'
