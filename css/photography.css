@@ -121,6 +121,7 @@ button:focus {outline:0 !important;}
 	border:none;
 	background-color: transparent;
 	opacity: .3;
+	z-index:9999;
 }
 #arrow_left {
 	background: url("../images/arrow_l.png") no-repeat;
