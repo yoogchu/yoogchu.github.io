@@ -116,6 +116,7 @@ def writeToHTML(filename):
 	overWrite.close()
 
 def main():
+	print 'monthly compressions:' + str(tinify.compression_count)
 	if syncDIR():
 		print 'Renaming main dir ...'
 		rename(DIR)
