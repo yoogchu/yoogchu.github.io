@@ -57,18 +57,29 @@ def compress():
 	if not os.path.exists(DIR + 'thumbs/'):
 		os.makedirs(DIR + 'thumbs/')
 
+	maxRetryCount = 3
+
 	for i in range (1, countFiles(DIR)+1):
+		retryCount = 0
+
 		if os.path.isfile(DIR + "thumbs/" + str(i) + "_thumb" + EXT):
 			# print 'skipping ' + str(i) + EXT
 			continue
 		print 'compressing ' + str(i) + EXT
 
-		source = tinify.from_file(DIR + str(i) + EXT)
-		resized = source.resize(
-		    method="scale",
-		    width=350
-		)
-		resized.to_file(DIR + "thumbs/" + str(i) + "_thumb" + EXT)
+		while retryCount < maxRetryCount:
+			try:
+				source = tinify.from_file(DIR + str(i) + EXT)
+				resized = source.resize(
+				    method="scale",
+				    width=350
+				)
+				resized.to_file(DIR + "thumbs/" + str(i) + "_thumb" + EXT)
+			except AttributeError as e:
+				retryCount+=1
+				print 'Caught ' + str(e) + '. Retrying.. (' + str(retryCount) + '/' + str(maxRetryCount) + ').'
+				continue
+			break
 
 	print 'done'
 
