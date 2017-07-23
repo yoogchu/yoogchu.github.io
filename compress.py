@@ -4,8 +4,8 @@ from yattag import Doc
 
 tinify.key = "19UKhWk_BM2XBxQ1akPgWfrPB95fexFw"
 
-DIR = "images/photography/"
-DIR_THUMB = "images/photography/thumbs/"
+DIR = "photos/"
+DIR_THUMB = "photos/thumbs/"
 EXT = ".jpg"
 increment_num = 0
 
