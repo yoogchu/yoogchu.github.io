@@ -1,5 +1,5 @@
 import tinify
-import os, os.path, glob
+import os, os.path, glob, datetime
 from yattag import Doc
 
 tinify.key = "19UKhWk_BM2XBxQ1akPgWfrPB95fexFw"
@@ -11,6 +11,9 @@ increment_num = 0
 
 def countFiles(directory):
 	list_dir = []
+	if not os.path.exists(directory):
+		os.makedirs(directory)
+
 	list_dir = os.listdir(directory)
 	count = 0
 	for file in list_dir:
@@ -24,17 +27,22 @@ def checkRename():
 	global increment_num
 
 	files = glob.glob(DIR + "*" + EXT)
-	files.sort(key=os.path.getmtime)
+	files.sort(key=os.path.getctime)
 	stop = False
 	i = 1
 	increment_num = len(files)
+	erroredNum = 0
 
 	while not stop:
+		if erroredNum > 200:
+			return 0
 		try:
 			str(int(files[len(files)-i][files[len(files)-i].rfind('/')+1: files[len(files)-i].rfind('.')]))
 			stop = True
 		except ValueError as e:
 			i=i+1
+		except IndexError as e:
+			erroredNum+=1
 
 	increment_num = increment_num - i + 1
 	return countFiles(DIR) == int(files[len(files)-i][files[len(files)-i].rfind('/')+1: files[len(files)-i].rfind('.')])
@@ -65,7 +73,7 @@ def compress():
 		if os.path.isfile(DIR + "thumbs/" + str(i) + "_thumb" + EXT):
 			# print 'skipping ' + str(i) + EXT
 			continue
-		print 'compressing ' + str(i) + EXT
+		print 'compressing ' + str(i) + EXT + ' || ' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 		while retryCount < maxRetryCount:
 			try:
@@ -116,7 +124,7 @@ def writeToHTML(filename):
 	overWrite.close()
 
 def main():
-	print 'monthly compressions:' + str(tinify.compression_count)
+#	print 'monthly compressions:' + str(tinify.compression_count)
 	if syncDIR():
 		print 'Renaming main dir ...'
 		rename(DIR)
