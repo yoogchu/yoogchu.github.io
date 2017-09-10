@@ -1,9 +1,10 @@
 .main {
-	background: url(../images/3.jpg) no-repeat center center fixed; 
+	background: url(../images/bg/0.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	opacity:.75;
 }
 .center {
 	display: block;
@@ -19,14 +20,18 @@
 	margin: auto;
 }
 #name {
-	background: #3b5998;
+//	background: #3b5998;
 	padding: 10px;
+	opacity:.8;
+	font-size:26px;
+	color:#ffffff;
+	letter-spacing:3px;
 }
 #typed {
 	color: #3b5998;
 }
 .nameblock {
-	background-color: rgba(230,230,230,.6);
+//	background-color: rgba(230,230,230,.6);
 	color: #FFF;
 	padding: 20px;
 	font-family: Poppins;

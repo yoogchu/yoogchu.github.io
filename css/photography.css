@@ -68,11 +68,12 @@ a {
 	text-align: center;
 	padding: 20px;
 	vertical-align: middle;
+	overflow:hidden;
 }
 .container-images img {
 	width: 250px;
 	margin: 3px;
-	opacity: .8;
+	opacity: .75;
 }
 .container-images img:hover {
 	opacity: 1 !important;
@@ -115,12 +116,12 @@ button:focus {outline:0 !important;}
 	position: fixed;
 	cursor:pointer;
 	top:50%;
-	width:70px;
-	height:50px;
+	height:50px;	
+	width:50px;
 	outline:none;
 	border:none;
 	background-color: transparent;
-	opacity: .3;
+	opacity: .2;
 	z-index:9999;
 }
 #arrow_left {
