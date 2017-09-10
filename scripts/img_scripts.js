@@ -80,8 +80,9 @@ function clickImage(id) {
 
 		if (window.innerHeight > window.innerWidth) document.getElementById('fs-image').style.marginTop="50%";	
 	}
-	document.body.style.backgroundColor="#000";
 	clickedImage.style.visibility="hidden";
+	
+	document.body.style.backgroundColor="#000";
 	var images = document.querySelectorAll(".container-images > img");
 	for (var i = 0; i < images.length; i++) images[i].style.visibility="hidden";
 	document.getElementsByClassName("container-images")[0].style.visibility="hidden";
