@@ -87,7 +87,7 @@ function clickImage(id) {
 	for (var i = 0; i < images.length; i++) images[i].style.visibility="hidden";
 	document.getElementsByClassName("container-images")[0].style.visibility="hidden";
 	document.getElementsByClassName("header")[0].style.visibility="hidden";
-	document.getElementsByClassName("footer")[0].style.visibility="hidden";
+	// document.getElementsByClassName("footer")[0].style.visibility="hidden";
 	document.getElementsByClassName("white-block")[0].style.visibility="hidden";
 	lastClickedImage = id;
 }
@@ -100,7 +100,7 @@ function hideFS() {
 	var images = document.querySelectorAll(".container-images > img");
 	for (var i = 0; i < images.length; i++) images[i].style.visibility="visible";
 	document.getElementsByClassName("header")[0].style.visibility="visible";
-	document.getElementsByClassName("footer")[0].style.visibility="visible";
+	// document.getElementsByClassName("footer")[0].style.visibility="visible";
 	document.getElementsByClassName("white-block")[0].style.visibility="visible";
 	document.body.style.backgroundColor="#fff";
 	document.getElementById("fs-image").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
