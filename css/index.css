@@ -1,10 +1,10 @@
 .main {
-	background: url(../images/bg/0.jpg) no-repeat center center fixed; 
+	background: url(../images/bg/2.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	opacity:.75;
+	opacity:.8;
 }
 .center {
 	display: block;
@@ -22,8 +22,12 @@
 .header {
 	position: absolute;
 }
+.header a {
+	color: #3b3a36;
+	opacity: .8;
+}
+
 #name {
-//	background: #3b5998;
 	padding: 10px;
 	opacity:.8;
 	font-size:26px;
@@ -34,7 +38,6 @@
 	color: #3b5998;
 }
 .nameblock {
-//	background-color: rgba(230,230,230,.6);
 	color: #FFF;
 	padding: 20px;
 	font-family: Poppins;
@@ -50,79 +53,21 @@
 	height: 100%;
 }
 
-.dabbling img {
-	max-height: 400px;
-	max-width: 100%;
-}
-.dabbling {
-	margin-left: 5px;
-	margin-right: 5px;
-	vertical-align: top;
-	text-align: center;
-	width: 100%;
 
-}
-.dabbling_div {
-	margin: auto;
-	margin-bottom: 20px;
-}
-
-.project {
-	width: 80%;
-	color: rgba(150,150,150,1);
-	text-align: center;
+.footer-new {
+	position: absolute;
+	bottom: 0;
+	width: 40%;
+	right:0;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	font-family:Poppins;
-	align-content:center;
+	font-family:Lato, sans-serif;
+	z-index:9999;
 }
-.project a {
-	margin: 10px;
-}
-.info {
-	background-color: #ffffff;
-	color: white;
-	height: 160px;
-	width: 160px;
-	padding: 20px;
-	justify-content:center;
-	align-content:center;
-	display:table-cell;
-	font-size: 12pt;
-	transition: all 1s ease;
-	text-align: center;
-	vertical-align: center;
-	/*box-shadow: 2px 2px 2px 2px #888888;*/
-
-}
-.info-name {
-	color: #8b9dc3;
-	position: relative;
-	float: left;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-}
-.info-type {
-	display: none;
-	color: #dfe3ee;
-	font-size: 14pt;
-}
-.info:hover {
-	background-color: #3b5998;
-}
-.info:hover .info-type {
-	display: block;
-	position: relative;
-	float: left;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.info:hover .info-name {
-	display: none;
+.footer-new a {
+	letter-spacing: 3px;
+	font-size: 3vh;
+	color: #fff;
+	opacity:.7;
 }
 
 .typed-cursor{
@@ -159,26 +104,8 @@
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
-.carousel-inner {
-	height: 400px;
-}
-
-.active {
-	overflow: hidden;
-	max-height: 400px !important;
-}
-.item {
-	background-color: #000;
-}
-.item img {
-	max-height: 600px;
-	margin: auto;
-}
 
 @media only screen and (min-device-width: 1500px){ /* widescreen */
-	.carousel-inner {
-		height: 50vh;
-	}
 	.active {
 		max-height: 900px !important;
 	}
@@ -198,28 +125,7 @@
 		position: relative;
 		top: -50px;
 	}
-	.dabbling {
-		width: 100%;
-	}
-	.dabbling img {
-		width: 100%;
-	}
 
-	.carousel-inner {
-		height: 150px;
-	}
-	.item {
-		height: 100%;
-	}
-	.item img {
-		width: 100% !important;
-	}
-	.carousel-caption {
-		color: rgba(255,255,255,0.8) !important;
-	}
-	#jk {
-		display: none;
-	}
 	#typed {
 		display: block;
 		position: relative;
@@ -229,7 +135,4 @@
 		display: none;
 	}
 
-	.project, .info, .info-type {
-		text-align: center;
-	}
 }
