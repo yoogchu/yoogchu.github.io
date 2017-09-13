@@ -44,7 +44,7 @@ fOInt = setInterval(function() {
 
 attach(window,'load',function(){
 
-    fadeOut(document.getElementById('loader'),1,0,50,function(cb){
+    fadeOut(document.getElementById('loader'),.8,0,100,function(cb){
     	document.getElementById('loader').style.display="none";
     });
     
