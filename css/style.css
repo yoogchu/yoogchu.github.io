@@ -57,12 +57,13 @@ a {
 	padding: 100px;
 }
 #logo_small {
-	max-width: 80px;
-	width: 10vh;
+	max-width: 70px;
+	min-width: 40px;
+	width: 10%;
 	position: absolute;
-	top:20px;
-	left:20px;
-	z-index: 99;
+	left:15px;
+	top:10px;
+	z-index: 999;
 }
 .wide-screen {
 	display: none;
@@ -77,7 +78,7 @@ a {
 	display: flex;
 	width: 100%;
 	font-family:Lato, sans-serif;
-	position:absolute;
+	position:relative;
 	top:0;
 	z-index:9999;
 }
@@ -111,7 +112,7 @@ a {
 	margin:0;
 }
 .white-block {
-	margin-top:0px
+	margin-top:0px;
 	width:100%;
 	left: 0;
 	background-color: #dfe3ee;
@@ -180,6 +181,9 @@ a {
 @media only screen and (min-device-width: 650px){
 	.divider {
 		padding: 40px;
+	}
+	.header a {
+		font-size: 4vh;
 	}
 }
 @media only screen and (min-device-width: 1500px){ /* widescreen */

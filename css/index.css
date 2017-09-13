@@ -19,6 +19,9 @@
 	right: 0;
 	margin: auto;
 }
+.header {
+	position: absolute;
+}
 #name {
 //	background: #3b5998;
 	padding: 10px;

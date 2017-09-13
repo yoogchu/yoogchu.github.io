@@ -1,3 +1,11 @@
 .header {
-	background-color: #dfe3ee;
+	background-color: #8b9dc3;
+	z-index: 100;
+}
+.header a {
+	color: #f7f7f7;
+}
+#logo_small {
+	z-index:9999 !important;
+	position: absolute;
 }
