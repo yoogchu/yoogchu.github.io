@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<link rel="icon" href="images/favicon.ico" />
+	<meta name="description" content="Eugene Chu, a 4th year student at Georgia Institute of Techology studying Computer Science and Aerospace Engineering. Software developer in the making.">
+	<meta name="author" content="Eugene Chu">
+	<meta name="keywords" content="Eugene Chu, Eugene, Chu, yoog, yoogchu, Computer Science, Computer Science Student, Student, Georgia Institute of Technology, Georgia Tech, Web Developer, Webdev, Web Development, Full Stack, Front End, Back End, Software Engineer, Software Engineering, Software Engineering Intern, Intern, Internship, Github, Java, Python, HTML, CSS, Javascript, blog, blogging">
+
+ 
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+ 	<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="css/style.css" type="text/css" rel="StyleSheet">
+<link href="css/project-detail.css" type="text/css" rel="StyleSheet">
+
+
+	<title>chu | projects</title>
+	</head>
+
+	<body>
+	 <div class = 'main'>
+		<div class = "logo_smalls_div"><a href="index.html"><img id = "logo_small" src = "images/e_logo_red.svg"></a> </div>		
+
+		<div class = "black-block1">
+		<div class = "project">
+
+		  <h1 style="color:#f7f7f7; text-align:center; width:100%; margin-bottom:20px; letter-spacing:3px; opacity:.7;"> projects</h1>
+
+			<div class = "info" id='7' onclick='show(this)'>
+				<div class = "info-name"> 2d Platformer </div> 
+				<div class = "info-type"> C </div>
+			</div>
+
+			<div class = "info" id='6' onclick='show(this)'>
+				<div class = "info-name"> Haiku Bot </div> 
+				<div class = "info-type"> Python </div>
+			</div>
+
+			<div class = "info" id='5' onclick='show(this)'>
+				<div class = "info-name"> Intelligent Transportation Systems </div> 
+				<div class = "info-type"> js/ML </div> 
+			</div>
+
+			<div class = "info" id='4' onclick='show(this)'>
+				<div class = "info-name"> Clean Water Reporter </div> 
+				<div class = "info-type"> Java </div> 
+			</div>
+
+			<div class = "info" id='3' onclick='show(this)'>
+				<div class = "info-name"> Pacman Artificial Intelligence </div> 
+				<div class = "info-type"> Python </div>
+			</div>
+
+			<div class = "info" id='2' onclick='show(this)'>
+				<div class = "info-name"> Turbine Engine Cycle Analysis </div> 
+				<div class = "info-type"> MATLAB </div>
+			</div>
+
+			<div class = "info" id='1' onclick='show(this)'>
+				<div class = "info-name"> MedxPort </div> 
+				<div class = "info-type"> Javascript </div>
+			</div>
+			 <div class = "info" id='0' onclick='show(this)'>
+				<div class = "info-name"> Get the Flight Out </div> 
+				<div class = "info-type"> Javascript </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id='hideModal' onclick='hide()'> </div>
+	<div id = 'modal'>
+		<div id = 'p7' class='p'>
+			<h1> 2d Platformer in Game Boy Advance Simulator </h1>
+			<h3> November 2016 </h3><hr>
+				 <p> A gameboy platformer, written in C, developed for the visual boy advance. The game generates an infinite number of randomly seeded levels and the goal is to use the arrow keys to navigate the character sprite and to jump on the platforms to reach the goal sprite. This game uses Direct Memory Access to visualize the sprites and implements pretty decent object collision. <br><br>
+				 I created this game during ArchHacks. In the future I plan to port it to another platform and have improved random seeding as well as better object collision. </p>
+				 <br>
+				 <video width="75%" loop controls autoplay class = "video">
+				  <source src="images/vba.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video><br>
+				 <!-- <a href = "https://github.com/yoogchu/vbaplatformer"> <img src = "images/GitHub-Mark-Light-64px.png" class="social_media_img"> </a> -->
+		</div>
+		<div id = 'p6' class='p'>
+			<h1> Natural Language Processing: Haiku Bot </h1>
+			<h3> October 2016 </h3><hr>
+
+				 <p> A twitter bot that creates a haiku based around the word that it is given. It does this by creating word associations from the TwinWord Word Association API, then creating a bigram collocation dictionary from the Gutenberg and Brown corporas. When the bigram dictionaries are created, an algorithm is used to randomly select bigrams that fill the syllabus rule of 5, 7, 5 per line, respectively. After the haiku is generated, the twitter bot automatically replies with the generated haiku. The program also takes quite a long time to create each bigram collocation dictionary so it supports caching. In the future, I plan to implement trigrams as well as nonrandomized bigram selection for the haiku in order to bring some more sense to it. <br><br>
+				 I created this app for HackGSU and worked mostly independently. I used Python, the Python Natural Language Tool Kit, the TwinWord Word Association API, and the Twitter API. </p>
+				 <br>
+				<!--  <a href = "https://devpost.com/software/tweety-haiku" style="text-align:center"> <img src = "images/devpost-blue.svg" class="social_media_img"> </a> -->
+		</div>
+		<div id = 'p5' class='p'>
+			<h1> Intelligent Transportation Systems </h1>
+			<h3> August 2016 - December 2017 </h3><hr>
+
+				 <p> A webapp for which I am deploying a live map of the buses in the Georgia Tech transportation system to aid in the supervision of drivers. It allows the managers to see which buses are consistently lagging/leading and/or taking too many breaks. The buses have tablets on them that transmit information such as location, speed, etc. and is collected in a database. <br> I'm also using machine learning, specifically, a decision tree and logistical regression, to attempt to forecast bus arrival times. Data was collected through 01/17 - 05/17, consisting of acceleration, latitude/longitude, speed, etc to determine whether a bus was stopped at a bus stop or not. By using a decision tree, the model was able to obtain a consistent accuracy of 88% on the testing dataset. However, forecasting bus times via logistic regression was much more difficult task. The model was only able to obtain an accuracy of roughly 14%. <br><br>
+
+				 I worked with a team of four to deploy the live map of the buses using Javascript, jQuery, Node.js. I worked with another student to attempt forecasting bus times. </p>
+		</div>
+		<div id = 'p4' class='p'>
+			<h1> Clean Water Reporter </h1>
+			<h3> August 2016 - December 2016 </h3><hr>
+
+				<p> A JavaFX application loosely based on a <a href = "https://2015.spaceappschallenge.org/challenge/clean-water-mapping/"> NASA challenge</a>. It supports finding clean drinking water and reporting on testing results. In many parts of the world, access to clean water is a severe problem. Many times, water is available, but people do not know where to get it. Other times, water may appear clean, but has unacceptable levels of contaminants. <br>
+				This application supports user creation/authentication/management, admin access, logging, submitting a water report, data visualization of water reports, and database logging. <br><br>
+				I'm working with a team of five, using PostgreSQL and JavaFX to create the controllers for connecting the model and view together in a MVC software architectural pattern. The team is also following Agile software development practices. </p>
+				<img src = "images/water_login.png">
+				<img src = "images/water_viewreports.png">
+				<img src = "images/water_viewreport.png">
+				<img src = "images/water_viewmap.png">
+				<img src = "images/water_viewhistorical.png">
+		</div>
+		<div id = 'p3' class='p'>
+			<h1> Pacman Artificial Intelligence </h1>
+			<h3> September 2016 - December 2016 </h3><hr>
+
+				 <p> A python program that simulates artificial intelligence to solve certain goals for Pacman, whether it be finding the fastest route to a certain position, collecting the most points from strategically dispersed food, tracking ghosts using joint particle filters and inference, etc. <br><br>
+				 I integrated search algorithms such as depth first search, breadth first search, A*, as well as created several heuristics to create  optimal algorithms that find the most efficient path to the goal state. Also, I implemented algorithms for performing both exact and approximate inference using Bayes' Nets.</p>
+		</div>
+		<div id = 'p2' class='p'>
+			 <h1> Turbine Engine Cycle Analysis </h1>
+			 <h3> June 2016 </h3><hr> 
+
+				 <p> A MATLAB program that calculates the performance parameters for a generic jet engine cycle. It has the capability of turning on and off specific components based on the performance requirements. <br>
+				  Components include: Diffuser, Bypass Fan, Compressor, Fuel Pump, Main Burner, Turbine, Turbine Mixer, Fan Turbine, Afterburner, Core Nozzle, Fan Nozzle, Nozzle Mixer, and Combined Nozzle. <br><br>
+				 I helped derive the equations with a team of two others and designed the code structure as well as output the performance parameters to a formatted text file. </p>
+
+				<img src = "images/turbo_input.png">
+				<img src = "images/turbo_burner.png">
+				<img src = "images/turbo_output.png">
+<!-- 
+				 <a href = "https://github.com/yoogchu/turbine-engine-cycle-analysis"> <img class="social_media_img" src = "images/GitHub-Mark-64px.png"> </a> -->
+		</div>
+		<div id = 'p1' class='p'>
+			<h1> MedxPort </h1>
+			<h3> February 2016 </h3><hr>
+
+			 <p> A webapp with an iOS component that is intended to be used by patients in small clinics as a universal medical profile as well as a scheduling application. The patient could update his medical profile on the webapp, and view it on the iOS app. The patient could also view the doctors schedule and choose a time slot available for both of them to avoid any double-bookings. <br>
+			 In a team of four at MHacks, I helped develop the scheduling calendar using Javascript and jQuery as well as create and design the user interface. <br> </p> <br>
+			<img class ="img_big"src = "images/medx_patient.png"> 
+			<img class ="img_small"src = "images/medx_patientsignup.png" style="float:right">
+			<img class ="img_small"src = "images/medx_login.png">
+			 <!-- <a href="http://devpost.com/software/medxport"> <img src = "images/devpost-blue.svg" class="social_media_img"> </a>  -->
+			  </p>
+		</div>
+		<div id = 'p0' class='p'>
+			<h1> Get the Flight Out </h1>
+			<h3> February 2016 </h3><hr>
+
+			 <p> A webapp that queries the Expedia API to extract the cheapest flights out of an airport on a given da. It also utilizes the MapBox API as part of the UI. <br><br>
+			 This was my time competing in a hackathon at HackFSU. My inspiration sprang from trying to think of spring break plans and not knowing where to go, or what to do. Over the course of this hackathon, I learned what an API was, how to call it, how to parse through the JSON it returned, what a JSON even was, and how to connect working Javascript to HTML. I worked on a team of four and I developed the algorithm to sort the cheapest flights and also worked on connecting the Javascript to HTML. <br> </p> <br>
+			 <video width="100%" loop controls autoplay>
+			  <source src="images/gtfo.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+			<!--  <a href = "http://devpost.com/software/gtfo-get-the-flight-out"> <img src = "images/devpost-blue.svg" class="social_media_img"> </a>  -->
+			</p>
+			</div>
+	</div>
+</body>
+<script src="scripts/projects.js" type="text/javascript"> </script>
+</html>
