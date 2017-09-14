@@ -1,1 +1,12 @@
-Website for projects, photography, blog. Used to be for recruiters, now its for me.
+Personal website for photos, resume, projects, blog (maybe).
+
+TODO: 
+
+PHOTO	- progressive loading with gaussian blurred images
+	- redesign layout
+	- folders	?
+
+MAIN	- framework	? meteor/react? NO ANGULAR
+	- d3	?
+	- modularize projects
+
