@@ -13,6 +13,7 @@ function show(id) {
 	for (var i = 0; i < boxes.length; i++) boxes[i].style.visibility="hidden";
 
 	document.getElementById("modal").style.display = 'block';
+	document.getElementById("modal").scrollTop = 0;
 	document.getElementById("hideModal").style.display = 'block';
 	
 	lastClicked = id;
