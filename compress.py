@@ -136,10 +136,10 @@ def main():
 	if increment_num < countFiles(DIR) or increment_num > countFiles(DIR_THUMB):
 		print 'Renaming ' + str(countFiles(DIR)) + ' files ...'
 		rename(DIR)
-		print 'Writing to HTML ...'
-		writeToHTML('photography.html')
 		print 'Compressing ...'
 		compress()
+	print 'Writing to HTML ...'
+	writeToHTML('photography.html')
 	
 if __name__ == '__main__':
 	main()
