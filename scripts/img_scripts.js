@@ -2,15 +2,32 @@
 
 var lastClickedImage = null;
 var fullScreen = false;
+var critique_photos = [6,18,31,42,43,50,60,61,68,78,81,82,86,90,94,134,144,147,151,152,156,159,162,169,170,172,185,187,190,206,212,213,214,215,217,220];
 
 document.onkeydown = function(e) {
-	if (fullScreen == false) {
+	if (e.keyCode == 187) {
+		critique();
+	}
+	else if (fullScreen == false) {
 		return;
 	} else {
-		changeImage(e)
+		changeImage(e);
 	}
 };
 
+function critique() {
+	var images = document.querySelectorAll(".container-images > img");
+	console.log(images);
+	for (var i = images.length-1; i > 0; i--) {
+		if (critique_photos.includes(i)) {
+			console.log(i);
+			console.log(images[images.length-i].currentSrc);
+			continue;
+		} else {
+			images[images.length-i].style.visibility="hidden";
+		}
+	}
+}
 function changeImage(e) {
 
 	try {
