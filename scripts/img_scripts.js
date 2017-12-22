@@ -7,8 +7,7 @@ var critique_photos = [6,18,31,42,43,50,60,61,68,78,81,82,86,90,94,134,144,147,1
 document.onkeydown = function(e) {
 	if (e.keyCode == 187) {
 		critique();
-	}
-	else if (fullScreen == false) {
+	} else if (fullScreen == false) {
 		return;
 	} else {
 		changeImage(e);
