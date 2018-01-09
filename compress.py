@@ -8,6 +8,7 @@ DIR = "photos/"
 DIR_THUMB = "photos/thumbs/"
 EXT = ".jpg"
 increment_num = 0
+html_file = 'photography.html'
 
 def countFiles(directory):
 	list_dir = []
@@ -137,9 +138,14 @@ def main():
 		print 'Renaming ' + str(countFiles(DIR)) + ' files ...'
 		rename(DIR)
 		print 'Compressing ...'
-		compress()
+		try:
+			compress()
+		except Exception as e:
+			print e
+			print 'Connection aborted... stopping program.'
+			return
 	print 'Writing to HTML ...'
-	writeToHTML('photography.html')
+	writeToHTML(html_file)
 	
 if __name__ == '__main__':
 	main()
