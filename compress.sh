@@ -1,9 +1,12 @@
 #!/bin/bash
 
 python compress.py 
+compress=$?
 
-if [ $? -eq 1 ]
+if [ $compress -eq 2 ]
 then
+
+echo 'pushing to github'
 
 current_date_time=`date "+%Y-%m-%d %H:%M:%S"`
 

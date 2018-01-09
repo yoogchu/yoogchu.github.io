@@ -139,14 +139,10 @@ def main():
 		print 'Renaming ' + str(countFiles(DIR)) + ' files ...'
 		rename(DIR)
 		print 'Compressing ...'
-		try:
-			compress()
-		except Exception as e:
-			print e
-			sys.exit(0)
+		compress()
 	print 'Writing to HTML ...'
 	writeToHTML(html_file)
-	sys.exit(1)
+	sys.exit(2)
 	
 if __name__ == '__main__':
 	main()
