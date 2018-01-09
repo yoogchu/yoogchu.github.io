@@ -1,6 +1,7 @@
 import tinify
 import os, os.path, glob, datetime
 from yattag import Doc
+import sys
 
 tinify.key = "19UKhWk_BM2XBxQ1akPgWfrPB95fexFw"
 
@@ -142,10 +143,10 @@ def main():
 			compress()
 		except Exception as e:
 			print e
-			print 'Connection aborted... stopping program.'
-			return
+			sys.exit(0)
 	print 'Writing to HTML ...'
 	writeToHTML(html_file)
+	sys.exit(1)
 	
 if __name__ == '__main__':
 	main()
