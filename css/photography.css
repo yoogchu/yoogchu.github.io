@@ -147,6 +147,7 @@ button:focus {outline:0 !important;}
 	}
 	.logo {
 		/*width: 80%;*/
+		display: none;
 	}
 	.container-images {
 		padding: 0px;
@@ -159,7 +160,7 @@ button:focus {outline:0 !important;}
 		margin: 0px;
 		margin-bottom: 3px;
 	}
-	#arrow_left #arrow_right #exitFS {
+	#arrow_left, #arrow_right, #exitFS {
 		display: none;
 	}
 }

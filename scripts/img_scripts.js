@@ -86,7 +86,9 @@ function clickImage(id) {
 
 	var clickedImage = id;
 	// var src = clickedImage.src;
+	console.log(clickedImage);
 	var src = clickedImage.style.backgroundImage.split('"')[1];
+	console.log(src);
 	var newSrc = src.substring(0, src.indexOf("thumbs")) + src.substring(src.indexOf("thumbs")+7,
 		src.indexOf("_thumb")) + src.substring(src.indexOf("_thumb")+6, src.length);
 	document.getElementById("fs-image").src = newSrc;
@@ -102,10 +104,8 @@ function clickImage(id) {
 }
 
 function hideFS() {
-	console.log('hiding fs');
 	fullScreen = false;
 	document.getElementById("image-fs").style.display="none";
-	// document.getElementById("image-fs").style.visibility='hidden';
 	document.getElementById("fs-image").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
 }
 
