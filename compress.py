@@ -81,8 +81,9 @@ def compress():
 			try:
 				source = tinify.from_file(DIR + str(i) + EXT)
 				resized = source.resize(
-				    method="scale",
-				    width=350
+				    method="cover",
+				    width=245,
+				    height=245
 				)
 				resized.to_file(DIR + "thumbs/" + str(i) + "_thumb" + EXT)
 			except AttributeError as e:
@@ -113,8 +114,9 @@ def createTags():
 
 	with tag('div', klass='container-images'):
 		for i in xrange(numFiles,0,-1):
-			doc.stag('img', src=DIR+'thumbs/'+str(i)+'_thumb'+EXT, onclick="clickImage(this)")
-	
+			# doc.stag('img', src=DIR+'thumbs/'+str(i)+'_thumb'+EXT, onclick="clickImage(this)")
+			with tag('div', klass='image', style='background-image:url("'+ DIR+'thumbs/'+str(i)+'_thumb'+EXT+'")', onclick="clickImage(this)"):
+				pass
 	return doc.getvalue()
 def writeToHTML(filename):
 	lines = open(filename, 'r')
@@ -126,7 +128,8 @@ def writeToHTML(filename):
 	overWrite.close()
 
 def main():
-#	print 'monthly compressions:' + str(tinify.compression_count)
+	print 'monthly compressions:' + str(tinify.compression_count)
+
 	if syncDIR():
 		print 'Renaming main dir ...'
 		rename(DIR)

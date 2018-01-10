@@ -6,19 +6,7 @@
 	background-size: cover;
 	opacity:.8;
 }
-.center {
-	display: block;
-	text-align: center;
-	vertical-align: center;
-	width: 30%;
-	max-height: 200px;
-	position: absolute;
-	top:0;
-	bottom:0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
+
 .header {
 	position: absolute;
 }
@@ -26,7 +14,9 @@
 	color: #3b3a36;
 	opacity: .8;
 }
-
+.center {
+	position: absolute;
+}
 #name {
 	padding: 10px;
 	opacity:.8;
@@ -43,16 +33,6 @@
 	font-family: Poppins;
 	min-width: 300px;
 }
-.logo {
-	z-index: 99;
-	min-width: 200px;
-	min-height: 100px;
-	max-height: 200px;
-	max-width: 400px;
-	width:100%;
-	height: 100%;
-}
-
 
 .footer-new {
 	position: absolute;

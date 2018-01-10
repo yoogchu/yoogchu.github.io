@@ -16,11 +16,10 @@ document.onkeydown = function(e) {
 
 function critique() {
 	var images = document.querySelectorAll(".container-images > img");
-	console.log(images);
+	// console.log(images);
 	for (var i = images.length-1; i > 0; i--) {
 		if (critique_photos.includes(i)) {
-			console.log(i);
-			console.log(images[images.length-i].currentSrc);
+			// console.log(images[images.length-i].currentSrc);
 			continue;
 		} else {
 			images[images.length-i].style.visibility="hidden";
@@ -28,7 +27,6 @@ function critique() {
 	}
 }
 function changeImage(e) {
-
 	try {
 		code = e.keyCode;
 	} catch (err) {}
@@ -44,8 +42,11 @@ function changeImage(e) {
 			num:fs_source.substring(fs_source.lastIndexOf("/")+1, fs_source.lastIndexOf(".")),
 			ext: fs_source.substring(fs_source.lastIndexOf(".")+1)
 		}
-	var images = document.querySelectorAll(".container-images > img");
-	first_img = images[0].src.substring(images[0].src.lastIndexOf("/")+1, images[0].src.lastIndexOf("_"));
+	// var images = document.querySelectorAll(".container-images > img");
+
+	// first_img = images[0].src.substring(images[0].src.lastIndexOf("/")+1, images[0].src.lastIndexOf("_"));
+	var images = document.querySelectorAll(".image");
+	first_img = images[0].style.backgroundImage.split('"')[1].substring(images[0].style.backgroundImage.split('"')[1].lastIndexOf("/")+1, images[0].style.backgroundImage.split('"')[1].lastIndexOf("_"));
 	switch (code) {
 		case 27: //esc
 			hideFS()
@@ -81,44 +82,30 @@ function changeSize(newValue) {
 function clickImage(id) {
 	fullScreen = true;
 	document.getElementById("image-fs").style.display="block";
+	// document.getElementById("image-fs").style.visibility='visible';
+
 	var clickedImage = id;
-	var src = clickedImage.src;
+	// var src = clickedImage.src;
+	var src = clickedImage.style.backgroundImage.split('"')[1];
 	var newSrc = src.substring(0, src.indexOf("thumbs")) + src.substring(src.indexOf("thumbs")+7,
 		src.indexOf("_thumb")) + src.substring(src.indexOf("_thumb")+6, src.length);
 	document.getElementById("fs-image").src = newSrc;
-	// document.getElementById("fs-image").style.marginLeft=((window.innerWidth-document.getElementById("fs-image").width)/2)+"px";
 
 	if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-		document.getElementById('exitFS').style.left="10px";
-		document.getElementById('exitFS').style.top="50px";
+		document.getElementById('exitFS').style.display="none";
 		document.getElementById('arrow_left').style.display="none";
 		document.getElementById('arrow_right').style.display="none";
 
 		if (window.innerHeight > window.innerWidth) document.getElementById('fs-image').style.marginTop="50%";	
 	}
-	clickedImage.style.visibility="hidden";
-	
-	document.body.style.backgroundColor="#000";
-	var images = document.querySelectorAll(".container-images > img");
-	for (var i = 0; i < images.length; i++) images[i].style.visibility="hidden";
-	document.getElementsByClassName("container-images")[0].style.visibility="hidden";
-	document.getElementsByClassName("header")[0].style.visibility="hidden";
-	// document.getElementsByClassName("footer")[0].style.visibility="hidden";
-	document.getElementsByClassName("white-block")[0].style.visibility="hidden";
 	lastClickedImage = id;
 }
 
 function hideFS() {
+	console.log('hiding fs');
 	fullScreen = false;
-	lastClickedImage.style.visibility="visible";
 	document.getElementById("image-fs").style.display="none";
-	document.getElementsByClassName("container-images")[0].style.visibility="visible";
-	var images = document.querySelectorAll(".container-images > img");
-	for (var i = 0; i < images.length; i++) images[i].style.visibility="visible";
-	document.getElementsByClassName("header")[0].style.visibility="visible";
-	// document.getElementsByClassName("footer")[0].style.visibility="visible";
-	document.getElementsByClassName("white-block")[0].style.visibility="visible";
-	document.body.style.backgroundColor="#fff";
+	// document.getElementById("image-fs").style.visibility='hidden';
 	document.getElementById("fs-image").src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=";
 }
 

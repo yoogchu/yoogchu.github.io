@@ -15,6 +15,7 @@ body {
 	height: 100%;
 	width: 100%;
 	position: absolute;
+	text-align: center;
 }
 .container-fluid {
 	padding:0 !important;
@@ -48,43 +49,40 @@ a {
 	text-decoration: none !important;
 	font-color:rgba(150,150,150,1);
 }
-
-.header {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
-	margin-top: 2.5%;
-}
-#image-size {
-	color: #fff;
+.center {
+	padding: 20px;
+	margin-bottom: 0px;
 }
 .container-images {
 	position: relative;
-	top: 5%;
-	width: 85%;
-	margin: 0 auto;
-	background-color: #f0f0f0;
+	width: 100%;
+	margin: 0px auto;
 	text-align: center;
-	padding: 20px;
+	overflow: hidden;
 	vertical-align: middle;
-	overflow:hidden;
 }
-.container-images img {
-	width: 250px;
+
+.image {
+	position: relative;
+	width: 245px;
+	height: 245px;
 	margin: 3px;
-	opacity: .75;
+	margin-top: 0px;
+	background-position: 50% 50%;
+	background-size: cover;
+	display: inline-block;
 }
-.container-images img:hover {
-	opacity: 1 !important;
-}
+
 #image-fs {
 	display: none;
-	z-index: 1;
+	/*visibility: hidden;*/
+	z-index: 9999;
 	text-align: center;
-	height:100%;
 	position: fixed;
+	height: 100%;
 	width: 100%;
+	top: 0px;
+	background: #000;
 }
 #image-fs img {
 	position: absolute;
@@ -93,7 +91,7 @@ a {
 	max-width: 100%;
 	max-height: 100%;
 	background: url() no-repeat center center;
-	
+
 }
 button:focus {outline:0 !important;}
 #exitFS {
@@ -126,34 +124,38 @@ button:focus {outline:0 !important;}
 #arrow_left {
 	background: url("../images/arrow_l.png") no-repeat;
 	background-size: 100%;
-
-
 	left: 50px;
 
 }
 #arrow_right {
 	background: url("../images/arrow_r.png") no-repeat;
 	background-size: 100%;
-
 	right: 50px;
 }
+
 @media only screen and (min-device-width : 200px) and (max-device-width : 649px) {
 	html body .site-wrapper{
-			overflow-y: scroll; /* has to be scroll, not auto */
+			overflow-y: scroll; 
 	  -webkit-overflow-scrolling: touch;
-		}
-	.header #slider {
-		display: none;
+	}
+	.center{
+		margin: 0px;
+		width: 100%;
+		text-align: center;
+		padding: 0px;
+	}
+	.logo {
+		width: 80%;
 	}
 	.container-images {
 		padding: 0px;
 		width: 100%;
-		margin:0px;
-		top:0;
+		height: auto;
+		margin: 0px;
 	}
-	.container-images img {
+	.image {
 		width: 100%;
-		margin:0px;
-		opacity: 1;
-	}	
+		margin: 0px;
+		margin-bottom: 3px;
+	}
 }
