@@ -143,9 +143,10 @@ button:focus {outline:0 !important;}
 		width: 100%;
 		text-align: center;
 		padding: 0px;
+		display: none;
 	}
 	.logo {
-		width: 80%;
+		/*width: 80%;*/
 	}
 	.container-images {
 		padding: 0px;
@@ -157,5 +158,8 @@ button:focus {outline:0 !important;}
 		width: 100%;
 		margin: 0px;
 		margin-bottom: 3px;
+	}
+	#arrow_left #arrow_right #exitFS {
+		display: none;
 	}
 }
