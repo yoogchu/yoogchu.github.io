@@ -132,6 +132,9 @@ button:focus {outline:0 !important;}
 	background-size: 100%;
 	right: 50px;
 }
+.logo {
+	opacity: .7;
+}
 
 @media only screen and (min-device-width : 200px) and (max-device-width : 649px) {
 	html body .site-wrapper{
