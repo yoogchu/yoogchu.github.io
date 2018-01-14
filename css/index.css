@@ -91,28 +91,14 @@
 	}
 }
 @media only screen and (min-device-width : 200px) and (max-device-width : 649px) { /* mobile */
-
 	.nameblock {
 		height: 180px;
 		margin-top: 200px;
 	}
-	.logo {
-		position: relative;
-		top:-40px;
+	.header {
+		width: 100%;
 	}
-
-	#name {
-		position: relative;
-		top: -50px;
+	.nav {
+		width: 80%;
 	}
-
-	#typed {
-		display: block;
-		position: relative;
-		top: -50px;
-	}
-	.typed-cursor {
-		display: none;
-	}
-
 }
