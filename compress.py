@@ -3,7 +3,8 @@ import os, os.path, glob, datetime
 from yattag import Doc
 import sys
 
-tinify.key = "19UKhWk_BM2XBxQ1akPgWfrPB95fexFw"
+f = open('/Users/yoogchu/tinify_key.txt')
+tinify.key = f.read()
 
 DIR = "photos/"
 DIR_THUMB = "photos/thumbs/"
