@@ -5,6 +5,7 @@ import sys
 
 f = open('/Users/yoogchu/tinify_key.txt')
 tinify.key = f.read()
+print tinify.key
 
 DIR = "photos/"
 DIR_THUMB = "photos/thumbs/"
