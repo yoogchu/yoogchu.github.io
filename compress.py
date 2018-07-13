@@ -3,7 +3,7 @@ import os, os.path, glob, datetime
 from yattag import Doc
 import sys
 
-f = open('/Users/yoogchu/tinify_key.txt')
+f = open('/Users/yoog/tinify_key.txt')
 tinify.key = f.read()
 print tinify.key
 
