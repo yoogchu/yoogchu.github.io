@@ -3,8 +3,9 @@ import os, os.path, glob, datetime
 from yattag import Doc
 import sys
 
-f = open('/Users/yoogchu/tinify_key.txt')
-tinify.key = f.read()
+f = open('/Users/yoog/tinify_key.txt')
+# tinify.key = str(f.read())
+tinify.key = "QIeRMOzWircn0aZQ08IIP2BLkYBVcPxp"
 print tinify.key
 
 DIR = "photos/"
@@ -71,7 +72,7 @@ def compress():
 
 	maxRetryCount = 3
 
-	for i in range (1, countFiles(DIR)+1):
+	for i in range (countFiles(DIR),0,-1):
 		retryCount = 0
 
 		if os.path.isfile(DIR + "thumbs/" + str(i) + "_thumb" + EXT):
@@ -113,11 +114,12 @@ def rename(directory):
 def createTags():
 	numFiles = countFiles(DIR)
 	doc, tag, text = Doc().tagtext()
-
+	s3_thumbs_url = 'https://s3.amazonaws.com/yoogchu-website/thumbs/'
 	with tag('div', klass='container-images'):
 		for i in xrange(numFiles,0,-1):
 			# doc.stag('img', src=DIR+'thumbs/'+str(i)+'_thumb'+EXT, onclick="clickImage(this)")
-			with tag('div', klass='image', style='background-image:url("'+ DIR+'thumbs/'+str(i)+'_thumb'+EXT+'")', onclick="clickImage(this)"):
+			# with tag('div', klass='image', style='background-image:url("'+ DIR+'thumbs/'+str(i)+'_thumb'+EXT+'")', onclick="clickImage(this)"):
+			with tag('div', klass='image', style='background-image:url("'+ s3_thumbs_url +str(i)+'_thumb'+EXT+'")', onclick="clickImage(this)"):
 				pass
 	return doc.getvalue()
 def writeToHTML(filename):

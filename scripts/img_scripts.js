@@ -76,7 +76,7 @@ function clickImage(id) {
 	var src = clickedImage.style.backgroundImage.split('(')[1].split(')')[0];
 	console.log(src);
 
-	var newSrc = src.substring(0, src.indexOf("thumbs")) + src.substring(src.indexOf("thumbs")+7,
+	var newSrc = src.substring(0, src.indexOf("thumbs")) + 'photos/' + src.substring(src.indexOf("thumbs")+7,
 		src.indexOf("_thumb")) + src.substring(src.indexOf("_thumb")+6, src.length);
 	console.log(newSrc);
 	if (newSrc.indexOf('"') != -1) {
