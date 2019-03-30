@@ -4,8 +4,7 @@ from yattag import Doc
 import sys
 
 f = open('/Users/yoog/tinify_key.txt')
-# tinify.key = str(f.read())
-tinify.key = "QIeRMOzWircn0aZQ08IIP2BLkYBVcPxp"
+tinify.key = f.read()
 print tinify.key
 
 DIR = "photos/"

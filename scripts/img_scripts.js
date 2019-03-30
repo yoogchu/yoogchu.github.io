@@ -90,7 +90,7 @@ function clickImage(id) {
 		document.getElementById('arrow_left').style.display="none";
 		document.getElementById('arrow_right').style.display="none";
 
-		if (window.innerHeight > window.innerWidth) document.getElementById('fs-image').style.marginTop="50%";	
+		if (window.innerHeight > window.innerWidth) document.getElementById('fs-image').style.verticalAlign="middle";	
 	}
 	lastClickedImage = id;
 }
